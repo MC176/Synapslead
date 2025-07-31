@@ -64,10 +64,10 @@ const Books = () => {
   ];
 
   return (
-    <section id="books" className="py-24 bg-gradient-to-b from-indigo-50 via-purple-50 to-pink-50 relative overflow-hidden">
+         <section id="books" className="landing-section py-24 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-purple-300 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-32 h-32 bg-[#e7d3cb] rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-40 h-40 bg-pink-300 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/2 w-24 h-24 bg-indigo-300 rounded-full blur-2xl"></div>
       </div>
@@ -75,13 +75,12 @@ const Books = () => {
       <div className="container mx-auto px-5 relative z-10">
         <TitleHeader
           title="Mes Livres sur le Leadership Féminin"
-          sub="📚 Découvrez la méthode SynapsLead® en profondeur"
         />
 
         <div className="mt-20 max-w-7xl mx-auto">
           {/* Hero Book - Featured */}
           <div className="mb-20">
-            <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-4xl p-12 text-white relative overflow-hidden">
+            <div className="bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] rounded-4xl p-12 text-white relative overflow-hidden">
               <div className="absolute inset-0 bg-black/10"></div>
               <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
                 <div>
@@ -114,7 +113,7 @@ const Books = () => {
                       href={books[0].amazonLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-white text-purple-600 px-8 py-4 rounded-2xl font-bold hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-3 group"
+                      className="bg-white text-[#d9b8b0] px-8 py-4 rounded-2xl font-bold hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-3 group"
                     >
                       <span>Acheter sur Amazon</span>
                       <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -130,8 +129,8 @@ const Books = () => {
 
                 <div className="book-cover relative">
                   <div className="relative transform perspective-1000">
-                    <div className="w-full h-96 bg-gradient-to-br from-purple-100 via-pink-100 to-indigo-100 rounded-2xl shadow-2xl transform rotate-y-12 hover:rotate-y-0 transition-transform duration-700">
-                      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl"></div>
+                    <div className="w-full h-96 bg-gradient-to-br from-[#f5e3df] via-[#e7d3cb] to-[#d9b8b0] rounded-2xl shadow-2xl transform rotate-y-12 hover:rotate-y-0 transition-transform duration-700">
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#d9b8b0]/20 to-[#e7d3cb]/20 rounded-2xl"></div>
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="text-center">
                           <div className="text-8xl mb-4">📖</div>
@@ -157,8 +156,8 @@ const Books = () => {
                   <div className="flex gap-6">
                     {/* Book Cover */}
                     <div className="book-cover flex-shrink-0">
-                      <div className="w-32 h-48 bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl shadow-lg transform rotate-y-6 group-hover:rotate-y-0 transition-transform duration-500">
-                        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-xl"></div>
+                      <div className="w-32 h-48 bg-gradient-to-br from-[#f5e3df] to-[#e7d3cb] rounded-xl shadow-lg transform rotate-y-6 group-hover:rotate-y-0 transition-transform duration-500">
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#d9b8b0]/20 to-[#e7d3cb]/20 rounded-xl"></div>
                         <div className="absolute inset-0 flex items-center justify-center">
                           <div className="text-center">
                             <div className="text-4xl mb-2">📚</div>
@@ -171,12 +170,12 @@ const Books = () => {
                     {/* Content */}
                     <div className="flex-1 space-y-4">
                       <div>
-                        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3 py-1 rounded-full text-xs font-medium mb-3">
+                        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] text-white px-3 py-1 rounded-full text-xs font-medium mb-3">
                           <span className="w-2 h-2 bg-white rounded-full"></span>
                           {book.badge}
                         </div>
                         <h3 className="text-2xl font-bold text-gray-800 mb-2">{book.title}</h3>
-                        <p className="text-purple-600 font-medium">{book.subtitle}</p>
+                        <p className="text-[#d9b8b0] font-medium">{book.subtitle}</p>
                       </div>
                       
                       <p className="text-gray-600 text-sm leading-relaxed">
@@ -198,14 +197,14 @@ const Books = () => {
 
                       <div className="flex items-center justify-between pt-4">
                         <div>
-                          <div className="text-2xl font-bold text-purple-600">{book.price}</div>
+                          <div className="text-2xl font-bold text-[#d9b8b0]">{book.price}</div>
                           <div className="text-xs text-gray-500">{book.format}</div>
                         </div>
                         <a
                           href={book.amazonLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-2xl font-semibold hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center gap-2 group"
+                          className="bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] text-white px-6 py-3 rounded-2xl font-semibold hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center gap-2 group"
                         >
                           <span>Acheter</span>
                           <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -232,9 +231,9 @@ const Books = () => {
                 href="https://amazon.com/author/synapslead"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-2xl font-bold hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] text-white px-8 py-4 rounded-2xl font-bold hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
               >
-                <span>Voir tous mes livres sur Amazon</span>
+                <span>Approfondir la méthode</span>
                 <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>

@@ -4,7 +4,7 @@ const ContactExperience = () => {
   return (
     <div className="w-full h-full relative">
       <VideoBackground 
-        videoSrc="/images/screen.mp4"
+        videoSrc="/public/videos/video0.mp4"
         className="rounded-2xl overflow-hidden"
         style={{
           borderRadius: '1rem',

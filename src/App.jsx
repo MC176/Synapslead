@@ -3,7 +3,6 @@ import Navbar from "./components/NavBar";
 import ShowcaseSection from "./sections/ShowcaseSection";
 import FeatureCards from "./sections/FeatureCards";
 import Experience from "./sections/Experience";
-import TechStack from "./sections/TechStack";
 import Books from "./sections/Books";
 import Conferences from "./sections/Conferences";
 import Testimonials from "./sections/Testimonials";
@@ -14,10 +13,9 @@ const App = () => (
   <>
     <Navbar />
     <Hero />
-    <ShowcaseSection />
     <FeatureCards />
+    <ShowcaseSection />
     <Experience />
-    <TechStack />
     <Books />
     <Conferences />
     <Testimonials />

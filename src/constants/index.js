@@ -96,22 +96,17 @@ const techStackImgs = [
   {
     name: "Neurosciences",
     imgPath: "/images/logos/react.png",
-  },
-  {
-    name: "Neuronutrition",
-    imgPath: "/images/logos/python.svg",
+    videoPath: "/videos/neuroscience.mp4",
   },
   {
     name: "Psychologie appliquée",
     imgPath: "/images/logos/node.png",
+    videoPath: "/videos/psychologie.mp4",
   },
   {
     name: "Analyse transgénérationnelle",
     imgPath: "/images/logos/three.png",
-  },
-  {
-    name: "Conseil en image",
-    imgPath: "/images/logos/git.svg",
+    videoPath: "/videos/analyse-transgenerationnelle.mp4",
   },
 ];
 
@@ -119,7 +114,7 @@ const techStackIcons = [
   {
     name: "Neurosciences",
     modelPath: "/models/react_logo-transformed.glb",
-    scale: ,
+    scale: 1.0, // ← AJOUTEZ une valeur ici
     rotation: [0, 0, 0],
   },
   {
@@ -129,14 +124,14 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Psychologie appliquée",
+    name: "Psychologie appliquée", 
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
     name: "Analyse transgénérationnelle",
-    modelPath: "/models/three.js-transformed.glb",
+    modelPath: "/models/three.js-transformed.glb", 
     scale: 0.05,
     rotation: [0, 0, 0],
   },
@@ -150,7 +145,7 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "SynapsLead® m'a permis de comprendre mon fonctionnement neurologique et d'identifier mes zones de stress chronique. J'ai retrouvé ma clarté mentale et mon énergie durable.",
+    review: "SynapsLead® m'a permis de comprendre mon fonctionnement neurologique et d'identifier mes zones de stress chronique. J'ai retrouvé ma clarté mentale.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     title: "Phase 1 : Diagnostic & Fondations",
@@ -183,6 +178,42 @@ const expCards = [
       "Découvrir votre archétype de leadership parmi 8 possibilités.",
       "Réajuster votre image extérieure pour qu'elle incarne la femme que vous êtes devenue.",
       "Reprendre la main sur votre trajectoire et cesser d'être l'otage de vos conditionnements.",
+    ],
+  },
+  {
+    review: "Grâce à SynapsLead®, j'ai découvert mes patterns de stress et appris à les gérer efficacement. Ma productivité a augmenté de 40%.",
+    imgPath: "/images/exp4.png",
+    logoPath: "/images/logo4.png",
+    title: "Phase 4 : Optimisation & Performance",
+    date: "Modules 13-16",
+    responsibilities: [
+      "Optimiser vos performances cognitives et votre productivité.",
+      "Développer des stratégies de gestion du stress avancées.",
+      "Créer des routines quotidiennes qui soutiennent votre bien-être.",
+    ],
+  },
+  {
+    review: "La méthode m'a aidée à développer une communication authentique et impactante. Mes équipes me suivent maintenant naturellement.",
+    imgPath: "/images/exp5.png",
+    logoPath: "/images/logo5.png",
+    title: "Phase 5 : Communication & Influence",
+    date: "Modules 17-20",
+    responsibilities: [
+      "Maîtriser l'art de la communication authentique et impactante.",
+      "Développer votre charisme naturel et votre influence.",
+      "Créer des connexions profondes avec vos équipes et collaborateurs.",
+    ],
+  },
+  {
+    review: "Je me sens maintenant alignée avec qui je suis vraiment. J'ai trouvé ma voix et j'ose prendre ma place dans le monde professionnel.",
+    imgPath: "/images/exp6.png",
+    logoPath: "/images/logo6.png",
+    title: "Phase 6 : Alignement & Impact",
+    date: "Modules 21-24",
+    responsibilities: [
+      "Trouver votre voix authentique et votre mission personnelle.",
+      "Créer un impact durable dans votre domaine d'expertise.",
+      "Devenir un modèle inspirant pour d'autres femmes leaders.",
     ],
   },
 ];
