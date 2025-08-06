@@ -155,7 +155,7 @@ const Hero = () => {
             {/* Stats */}
             <div className="hero-stats flex items-center justify-center gap-8 pt-4">
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white">2.5 ans</div>
+                <div className="text-2xl md:text-3xl font-bold text-white">3 ans</div>
                 <div className="text-sm text-white/80">De Développement</div>
               </div>
               <div className="w-px h-12 bg-gradient-to-b from-transparent via-white/30 to-transparent"></div>
