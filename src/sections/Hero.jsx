@@ -155,18 +155,18 @@ const Hero = () => {
             {/* Stats */}
             <div className="hero-stats flex items-center justify-center gap-8 pt-4">
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white">500+</div>
-                <div className="text-sm text-white/80">Femmes accompagnées</div>
+                <div className="text-2xl md:text-3xl font-bold text-white">2.5 ans</div>
+                <div className="text-sm text-white/80">De Développement</div>
               </div>
               <div className="w-px h-12 bg-gradient-to-b from-transparent via-white/30 to-transparent"></div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white">98%</div>
-                <div className="text-sm text-white/80">Taux de satisfaction</div>
+                <div className="text-2xl md:text-3xl font-bold text-white">15 ans</div>
+                <div className="text-sm text-white/80">De Réflexion</div>
               </div>
               <div className="w-px h-12 bg-gradient-to-b from-transparent via-white/30 to-transparent"></div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white">12</div>
-                <div className="text-sm text-white/80">Modules structurés</div>
+                <div className="text-2xl md:text-3xl font-bold text-white">27</div>
+                <div className="text-sm text-white/80">Années d'Expérience</div>
               </div>
             </div>
           </div>
@@ -182,7 +182,7 @@ const Hero = () => {
               Méthode brevetée
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Une approche scientifique et structurée pour transformer votre leadership féminin
+              Une méthode unique, fondée sur les neurosciences, la neuronutrition, l’image stratégique et la psychologie positive.
             </p>
           </div>
 
@@ -228,7 +228,7 @@ const Hero = () => {
                 <div className="flex-1 text-center group cursor-pointer hover:scale-105 transition-all duration-300">
                   <div className="mb-3">
                     <div className="text-4xl md:text-5xl font-bold text-font-bold text-black mb-1 group-hover:scale-110 transition-transform duration-300">
-                      6
+                      7
                     </div>
                   </div>
                   <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-1">Tests</h3>
@@ -243,7 +243,7 @@ const Hero = () => {
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <div className="text-center">
                   <p className="text-gray-500 text-sm font-medium">
-                    Méthode validée par plus de 500 femmes dirigeantes
+                    Le Leadership ne se décrète pas, il se construit.
                   </p>
                 </div>
               </div>
@@ -252,77 +252,68 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* Section Citation - Design élégant et interactif */}
-      <section className="landing-section py-24 bg-gradient-to-br from-gray-50 via-white to-gray-50">
+      {/* Section Citation - Design élégant et sophistiqué */}
+      <section className="landing-section py-20 bg-gradient-to-br from-slate-50 via-white to-slate-50">
         <div className="container mx-auto px-5">
-          <div className="max-w-5xl mx-auto">
-            <div className="relative group">
-              {/* Guillemet d'ouverture stylé - Plus visible et animé */}
-              <div className="absolute -top-16 -left-8 md:-left-16 text-9xl md:text-[12rem] text-[#d9b8b0] font-serif opacity-80 group-hover:scale-110 transition-transform duration-500">
-                "
-              </div>
-              
-              {/* Contenu de la citation */}
-              <div className="bg-white/95 backdrop-blur-xl rounded-3xl p-10 md:p-16 shadow-2xl border border-white/30 relative z-10 hover:shadow-3xl transition-all duration-500 group-hover:-translate-y-2">
-                <blockquote className="text-center">
-                  <p className="text-3xl md:text-4xl lg:text-5xl font-medium text-gray-800 leading-tight italic mb-12 group-hover:text-gray-900 transition-colors duration-300">
-                    Il faut apprendre à nourrir son cerveau et le protéger.
+          <div className="max-w-3xl mx-auto">
+            <div className="relative">
+              {/* Citation principale avec design épuré */}
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-10 shadow-xl border border-white/40 relative overflow-hidden">
+                {/* Éléments décoratifs subtils */}
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#d9b8b0] to-transparent opacity-60"></div>
+                <div className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-br from-[#d9b8b0]/10 to-[#e7d3cb]/10 rounded-full"></div>
+                <div className="absolute bottom-6 left-6 w-8 h-8 bg-gradient-to-br from-[#e7d3cb]/10 to-[#d9b8b0]/10 rounded-full"></div>
+                
+                <blockquote className="relative z-10">
+                  {/* Texte de la citation avec guillemets intégrés */}
+                  <p className="text-xl md:text-2xl lg:text-3xl font-light text-slate-800 leading-relaxed mb-6 italic">
+                    "Et si votre façon de diriger devenait enfin le reflet de qui vous êtes vraiment?"
                   </p>
                   
-                  {/* Signature de Brigitte - Design amélioré */}
-                  <div className="flex items-center justify-center gap-12 mt-12">
-                    <div className="flex items-center gap-6 group/author">
+                  {/* Section auteur et signature */}
+                  <div className="flex items-center justify-between mt-6 pt-4 border-t border-slate-200/50">
+                    {/* Informations de l'auteur */}
+                    <div className="flex items-center gap-3">
                       <div className="relative">
                         <img 
                           src="/images/Brigitte.png" 
-                          alt="Brigitte - Signature"
-                          className="w-20 h-20 rounded-full object-cover shadow-xl group-hover/author:scale-110 transition-transform duration-300"
+                          alt="Brigitte - Fondatrice"
+                          className="w-12 h-12 rounded-full object-cover shadow-lg ring-2 ring-white"
                         />
-                        {/* Anneau décoratif */}
-                        <div className="absolute inset-0 rounded-full border-4 border-[#d9b8b0]/20 group-hover/author:border-[#d9b8b0]/40 transition-all duration-300"></div>
+                        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#d9b8b0]/20 to-[#e7d3cb]/20"></div>
                       </div>
-                      <div className="text-left">
-                        <p className="font-bold text-gray-800 text-xl group-hover/author:text-[#d9b8b0] transition-colors duration-300">Brigitte</p>
-                        <p className="text-sm text-gray-600 font-medium">Fondatrice SynapsLead</p>
+                      <div>
+                        <p className="font-semibold text-slate-800 text-base">Brigitte</p>
+                        <p className="text-xs text-slate-600 font-medium">Fondatrice SynapsLead</p>
                       </div>
                     </div>
                     
-                    {/* Rectangle pour la signature - Design amélioré */}
+                    {/* Signature élégante */}
                     <div className="relative">
-                      <div className="w-56 h-28 bg-gradient-to-r from-red-50 to-red-100 border-2 border-red-200 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                      <div className="w-32 h-12 flex items-center justify-center bg-gradient-to-r from-slate-50 to-white rounded-lg border border-slate-200/50 shadow-sm">
                         <img 
                           src="/images/signature-brigitte.png" 
                           alt="Signature de Brigitte"
-                          className="w-48 h-20 object-contain"
+                          className="w-28 h-10 object-contain opacity-90"
                           onError={(e) => {
                             e.target.style.display = 'none';
-                            e.target.nextSibling.style.display = 'flex';
                           }}
                         />
-
                       </div>
-                      {/* Effet de brillance */}
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      {/* Effet de brillance subtil */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent rounded-lg opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                   </div>
                 </blockquote>
               </div>
               
-              {/* Guillemet de fermeture stylé - Plus visible et animé */}
-              <div className="absolute -bottom-16 -right-8 md:-right-16 text-9xl md:text-[12rem] text-[#d9b8b0] font-serif opacity-80 group-hover:scale-110 transition-transform duration-500">
-                "
-      </div>
-
-              {/* Éléments décoratifs améliorés */}
-              <div className="absolute top-6 right-6 w-20 h-20 bg-gradient-to-br from-[#d9b8b0]/20 to-[#e7d3cb]/20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-700"></div>
-              <div className="absolute bottom-6 left-6 w-24 h-24 bg-gradient-to-br from-[#e7d3cb]/20 to-[#d9b8b0]/20 rounded-full blur-xl group-hover:scale-150 transition-transform duration-700"></div>
-              
-              {/* Ligne décorative */}
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-[#d9b8b0] to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              {/* Éléments décoratifs en arrière-plan */}
+              <div className="absolute -top-2 -left-2 w-6 h-6 bg-gradient-to-br from-[#d9b8b0]/30 to-[#e7d3cb]/30 rounded-full blur-sm"></div>
+              <div className="absolute -bottom-2 -right-2 w-4 h-4 bg-gradient-to-br from-[#e7d3cb]/30 to-[#d9b8b0]/30 rounded-full blur-sm"></div>
             </div>
           </div>
         </div>
-    </section>
+      </section>
     </>
   );
 };

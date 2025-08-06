@@ -77,18 +77,18 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Stabilité émotionnelle",
-    desc: "Activer les leviers physiologiques pour une clarté mentale et une énergie durable.",
+    title: "Neurophysiologie et Clarté mentale",
+    desc: "Optimisez les ressources de votre cerveau et de votre corps pour retrouver une énergie stable et une prise de décision plus fluide.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Estime de soi solide",
-    desc: "Reconstruire une estime stable et indiscutable, même dans l'adversité.",
+    title: "Estime de soi & Autorité intérieure",
+    desc: "Ancrez une estime de soi juste et profonde qui ne vacille plus face aux doutes ou aux injonctions extérieures.",
   },
   {
     imgPath: "/images/time.png",
-    title: "Autorité intérieure",
-    desc: "Reprendre la main sur votre trajectoire et cesser d'être l'otage de vos conditionnements.",
+    title: "Image, Style & Leadership incarné",
+    desc: "Révélez une image alignée avec votre posture intérieure grâce à une approche fondée sur le langage non-verbla, la colorimétrie et l'intelligence du style.",
   },
 ];
 

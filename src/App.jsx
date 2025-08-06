@@ -4,6 +4,7 @@ import ShowcaseSection from "./sections/ShowcaseSection";
 import FeatureCards from "./sections/FeatureCards";
 import Experience from "./sections/Experience";
 import Books from "./sections/Books";
+import Accompagnement from "./sections/Accompagnement";
 import Conferences from "./sections/Conferences";
 import Testimonials from "./sections/Testimonials";
 import Contact from "./sections/Contact";
@@ -18,6 +19,7 @@ const App = () => (
     <FeatureCards />
     <ShowcaseSection />
     <Experience />
+    <Accompagnement />
     <Books />
     <Conferences />
     <Testimonials />

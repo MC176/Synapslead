@@ -58,7 +58,7 @@ const NewsletterPopup = () => {
           <div className="w-1/2 p-6 flex flex-col justify-start pt-8">
             {/* Titre principal */}
             <h2 className="text-2xl font-bold text-black mb-2">
-              CONFERENCE DU 18 JUILLET 2025
+              CONFERENCE DU <br /> 18 SEPTEMBRE 2025
             </h2>
 
             {/* Sous-titre */}
@@ -123,7 +123,7 @@ const NewsletterPopup = () => {
               <button
                 type="submit"
                 disabled={!firstName || !lastName || !email || !isChecked}
-                className="w-full py-2 px-4 border-2 border-pink-500 bg-white text-black font-bold uppercase hover:bg-pink-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed rounded-md text-sm"
+                className="w-full py-2 px-4 border-2 border-[#d9b8b0] bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] text-black font-bold uppercase hover:from-[#e7d3cb] hover:to-[#d9b8b0] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed rounded-md text-sm"
               >
                 OUI S'IL VOUS PLAÎT
               </button>

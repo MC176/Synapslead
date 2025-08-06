@@ -218,28 +218,6 @@ const Books = () => {
               </div>
             ))}
           </div>
-
-          {/* Call-to-action */}
-          <div className="text-center mt-20">
-            <div className="bg-white/90 backdrop-blur-md rounded-3xl p-12 shadow-2xl border border-white/30 max-w-4xl mx-auto">
-              <h3 className="text-3xl font-bold text-gray-800 mb-4">Approfondissez vos connaissances</h3>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Ces livres vous donnent accès aux fondements théoriques et pratiques de la méthode SynapsLead. 
-                Plus de 500 femmes ont déjà bénéficié de ces ouvrages.
-              </p>
-              <a
-                href="https://amazon.com/author/synapslead"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] text-white px-8 py-4 rounded-2xl font-bold hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
-              >
-                <span>Approfondir la méthode</span>
-                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>
