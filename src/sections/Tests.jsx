@@ -80,27 +80,9 @@ const Tests = () => {
       <div className="container mx-auto px-5 relative z-10">
         <TitleHeader
           title="7 Tests Confidentiels"
-          subtitle="Pour poser un diagnostic de leadership précis"
         />
 
         <div className="mt-24 max-w-5xl mx-auto">
-          {/* Introduction élégante */}
-          <div className="text-center mb-20">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#d9b8b0]/20 to-[#e7d3cb]/20 rounded-3xl blur-xl"></div>
-              <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-12 border border-white/40 shadow-2xl">
-                <div className="w-16 h-1 bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] rounded-full mx-auto mb-8"></div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-6">
-                  Une approche scientifique et personnalisée
-                </h3>
-                <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-                  Chaque test a été conçu pour révéler une facette spécifique de votre potentiel de leadership. 
-                  Ensemble, ils constituent une cartographie complète de votre profil unique.
-                </p>
-              </div>
-            </div>
-          </div>
-
           {/* Liste des tests - Design moderne */}
           <div className="space-y-6">
             {tests.map((test, index) => (
@@ -157,28 +139,6 @@ const Tests = () => {
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Call-to-action élégant */}
-          <div className="text-center mt-20">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#d9b8b0]/20 to-[#e7d3cb]/20 rounded-3xl blur-xl"></div>
-              <div className="relative bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] rounded-3xl p-12 text-white shadow-2xl">
-                <div className="w-16 h-1 bg-white/30 rounded-full mx-auto mb-8"></div>
-                <h3 className="text-3xl font-bold mb-6">Prêt à découvrir votre profil de leadership ?</h3>
-                <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                  Ces 7 tests vous donneront une vision claire et précise de votre potentiel unique.
-                </p>
-                <button className="bg-white text-[#d9b8b0] px-10 py-4 rounded-2xl font-bold text-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
-                  <span className="flex items-center gap-3">
-                    Commencer les tests
-                    <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </div>

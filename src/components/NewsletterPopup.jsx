@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import emailjs from "@emailjs/browser";
 
 const NewsletterPopup = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -6,6 +7,16 @@ const NewsletterPopup = () => {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [isChecked, setIsChecked] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errorSubmit, setErrorSubmit] = useState(null);
+  
+  const formRef = useRef(null);
+
+  // Initialiser EmailJS
+  useEffect(() => {
+    emailjs.init('2rvX7TiM_sBqKr5r9');
+  }, []);
 
   useEffect(() => {
     // Afficher le pop-up après un court délai au chargement de la page
@@ -20,14 +31,73 @@ const NewsletterPopup = () => {
     setIsVisible(false);
   };
 
-  const handleSubmit = (e) => {
+  const validateForm = () => {
+    if (!firstName.trim() || firstName.length < 2) return 'Prénom requis (min. 2 caractères)';
+    if (!lastName.trim() || lastName.length < 2) return 'Nom requis (min. 2 caractères)';
+    if (!email.trim() || !email.includes('@')) return 'Email valide requis';
+    if (!isChecked) return 'Veuillez accepter les conditions';
+    return null;
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (firstName && lastName && email && isChecked) {
-      // Ici vous pouvez ajouter la logique pour envoyer l'email
-      console.log('Formulaire soumis:', { firstName, lastName, email });
-      setIsVisible(false);
+    
+    const validationError = validateForm();
+    if (validationError) {
+      setErrorSubmit(validationError);
+      return;
+    }
+
+    setLoading(true);
+    setErrorSubmit(null);
+
+    try {
+      await emailjs.sendForm(
+        'service_30ev33j',
+        'template_32xjsax',
+        formRef.current,
+        '2rvX7TiM_sBqKr5r9'
+      );
+
+      setIsSubmitted(true);
+      setFirstName('');
+      setLastName('');
+      setEmail('');
+      setIsChecked(false);
+    } catch (error) {
+      setErrorSubmit('Erreur lors de l\'envoi. Veuillez réessayer.');
+      console.error("EmailJS Error:", error);
+    } finally {
+      setLoading(false);
     }
   };
+
+  if (isSubmitted) {
+    return (
+      <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4" style={{ paddingTop: '80px' }}>
+        <div className="bg-white rounded-lg shadow-2xl max-w-md w-full p-8 text-center">
+          <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h3 className="text-xl font-bold text-gray-800 mb-2">Inscription réussie !</h3>
+          <p className="text-gray-600 mb-6">
+            Merci de vous être inscrit à notre newsletter. Vous recevrez bientôt nos actualités.
+          </p>
+          <button
+            onClick={() => {
+              setIsSubmitted(false);
+              setIsVisible(false);
+            }}
+            className="bg-[#d9b8b0] text-white px-6 py-2 rounded-md hover:bg-[#e7d3cb] transition-colors"
+          >
+            Fermer
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   if (!isVisible) return null;
 
@@ -67,7 +137,13 @@ const NewsletterPopup = () => {
             </p>
 
             {/* Formulaire */}
-            <form onSubmit={handleSubmit} className="space-y-3">
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-3">
+              {/* Champs cachés pour EmailJS */}
+              <input type="hidden" name="firstName" value={firstName} />
+              <input type="hidden" name="lastName" value={lastName} />
+              <input type="hidden" name="email" value={email} />
+              <input type="hidden" name="message" value="Inscription newsletter - Conférence du 18 septembre 2025" />
+              <input type="hidden" name="phone" value="Non renseigné" />
               {/* Champs nom et prénom sur la même ligne */}
               <div className="flex space-x-3">
                 <div className="flex-1">
@@ -119,13 +195,30 @@ const NewsletterPopup = () => {
                 </label>
               </div>
 
+              {/* Affichage des erreurs */}
+              {errorSubmit && (
+                <div className="text-red-500 text-sm bg-red-50 p-3 rounded-md border border-red-200">
+                  {errorSubmit}
+                </div>
+              )}
+
               {/* Bouton principal */}
               <button
                 type="submit"
-                disabled={!firstName || !lastName || !email || !isChecked}
-                className="w-full py-2 px-4 border-2 border-[#d9b8b0] bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] text-black font-bold uppercase hover:from-[#e7d3cb] hover:to-[#d9b8b0] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed rounded-md text-sm"
+                disabled={loading || !firstName || !lastName || !email || !isChecked}
+                className="w-full py-2 px-4 border-2 border-[#d9b8b0] bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] text-black font-bold uppercase hover:from-[#e7d3cb] hover:to-[#d9b8b0] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed rounded-md text-sm flex items-center justify-center gap-2"
               >
-                OUI S'IL VOUS PLAÎT
+                {loading ? (
+                  <>
+                    <svg className="animate-spin h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Envoi en cours...
+                  </>
+                ) : (
+                  'OUI S\'IL VOUS PLAÎT'
+                )}
               </button>
 
               {/* Lien "Non merci" */}
