@@ -5,6 +5,11 @@ import { Phone, Mail, MapPin, Check, Loader2, MessageSquare, X, ArrowRight, Play
 import TitleHeader from "../components/TitleHeader";
 
 const Contact = () => {
+  // Initialiser EmailJS
+  useEffect(() => {
+    emailjs.init('2rvX7TiM_sBqKr5r9');
+  }, []);
+
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -48,10 +53,10 @@ const Contact = () => {
 
     try {
       await emailjs.sendForm(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_30ev33j',
+        'template_32xjsax',
         formRef.current,
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        '2rvX7TiM_sBqKr5r9'
       );
 
       setIsSubmitted(true);
@@ -140,15 +145,28 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Bouton pour ouvrir le formulaire */}
-        <button
-          onClick={() => setShowForm(true)}
-          className="bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] text-white px-8 py-4 rounded-2xl hover:shadow-2xl focus:ring-4 focus:ring-[#d9b8b0]/20 transition-all duration-300 flex items-center gap-3 mx-auto font-bold text-lg group"
-        >
-          <MessageSquare className="w-6 h-6" />
-          <span>Nous contacter</span>
-          <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
-        </button>
+        {/* Boutons d'action */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <button
+            onClick={() => setShowForm(true)}
+            className="bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] text-white px-8 py-4 rounded-2xl hover:shadow-2xl focus:ring-4 focus:ring-[#d9b8b0]/20 transition-all duration-300 flex items-center gap-3 font-bold text-lg group"
+          >
+            <MessageSquare className="w-6 h-6" />
+            <span>Nous contacter</span>
+            <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
+          </button>
+
+          <a
+            href="https://calendly.com/synapslead"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white text-[#d9b8b0] border-2 border-[#d9b8b0] px-8 py-4 rounded-2xl hover:bg-[#d9b8b0] hover:text-white focus:ring-4 focus:ring-[#d9b8b0]/20 transition-all duration-300 flex items-center gap-3 font-bold text-lg group"
+          >
+            <Play className="w-6 h-6" />
+            <span>Prendre RDV</span>
+            <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
+          </a>
+        </div>
       </div>
 
       {/* Modal du formulaire */}
