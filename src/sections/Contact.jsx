@@ -109,7 +109,7 @@ const Contact = () => {
       <div className="relative z-20 text-center max-w-4xl mx-auto px-6">
         <TitleHeader
           title="Contactez-nous"
-          subtitle="💬 Parlons de votre transformation"
+          subtitle="Parlons de votre transformation"
         />
         
         {/* Informations de contact élégantes */}

@@ -145,75 +145,45 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "SynapsLead m'a permis de comprendre mon fonctionnement neurologique et d'identifier mes zones de stress chronique. J'ai retrouvé ma clarté mentale.",
+    review: "J'ai retrouvé ma clarté mentale et stabilisé mon énergie. Les fondations sont maintenant solides et je me sens ancrée dans qui je suis vraiment.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Phase 1 : Diagnostic & Fondations",
+    title: "🟠 Partie 1 — Reconnecter les fondations",
+    subtitle: "Stabiliser l'énergie, réorganiser le mental, retrouver sa clarté intérieure.",
     date: "Modules 1-4",
     responsibilities: [
-      "Comprendre votre fonctionnement neurologique et vos canaux sensoriels dominants.",
-      "Identifier vos forces naturelles et vos zones de stress chronique.",
-      "Activer les leviers physiologiques de la stabilité émotionnelle.",
+      "Poser les fondations intérieures : Forces de caractère, croyances, zones de résistance.",
+      "Cartographier ses émotions : Identifier les émotions dominantes et mieux les réguler.",
+      "Nourrir le cerveau, apaiser le corps : Neuronutrition, stress, sommeil, hormones.",
+      "Réactiver les bons circuits : Reprogrammer les automatismes internes.",
     ],
   },
   {
-    review: "La distinction entre confiance en soi et estime de soi a été révélatrice. J'ai reconstruit une estime solide et stable, même dans l'adversité.",
+    review: "Comprendre d'où je viens m'a permis de transformer ce qui me limitait encore. J'ai déjoué mes juges intérieurs et créé une identité cohérente.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "Phase 2 : Transformation & Alignement",
+    title: "🟡 Partie 2 — Rembobiner le fil d'Ariane",
+    subtitle: "Comprendre d'où l'on vient, transformer ce qui limite encore.",
     date: "Modules 5-8",
     responsibilities: [
-      "Faire la différence entre confiance en soi et estime de soi.",
-      "Identifier les situations où vous vous trahissez malgré vous.",
-      "Mettre en place des protocoles de gestion du stress et de recentrage.",
+      "Estime de soi & racines invisibles : Déjouer les juges intérieurs, explorer les transmissions inconscientes.",
+      "Croyances limitantes & spirales négatives : Débloquer les pensées-racines et adopter de nouveaux réflexes mentaux.",
+      "Aligner l'intérieur à l'extérieur : Créer une identité cohérente.",
+      "Communication verbale et non-verbale : Rayonner avec justesse en tant que femme dirigeante.",
     ],
   },
   {
-    review: "Découvrir mon archétype de leadership a été libérateur. J'ai arrêté de forcer un rôle qui ne m'appartenait pas et j'ai retrouvé mon autorité intérieure.",
+    review: "J'incarne maintenant un leadership rayonnant et assumé. Ma marque personnelle me distingue et mon style reflète parfaitement qui je suis.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "Phase 3 : Incarnation & Puissance",
+    title: "🟣 Partie 3 — Révéler l'héroïne intérieure",
+    subtitle: "Incarner un leadership rayonnant et assumé.",
     date: "Modules 9-12",
     responsibilities: [
-      "Découvrir votre archétype de leadership parmi 8 possibilités.",
-      "Réajuster votre image extérieure pour qu'elle incarne la femme que vous êtes devenue.",
-      "Reprendre la main sur votre trajectoire et cesser d'être l'otage de vos conditionnements.",
-    ],
-  },
-  {
-    review: "Grâce à SynapsLead, j'ai découvert mes patterns de stress et appris à les gérer efficacement. Ma productivité a augmenté de 40%.",
-    imgPath: "/images/exp4.png",
-    logoPath: "/images/logo4.png",
-    title: "Phase 4 : Optimisation & Performance",
-    date: "Modules 13-16",
-    responsibilities: [
-      "Optimiser vos performances cognitives et votre productivité.",
-      "Développer des stratégies de gestion du stress avancées.",
-      "Créer des routines quotidiennes qui soutiennent votre bien-être.",
-    ],
-  },
-  {
-    review: "La méthode m'a aidée à développer une communication authentique et impactante. Mes équipes me suivent maintenant naturellement.",
-    imgPath: "/images/exp5.png",
-    logoPath: "/images/logo5.png",
-    title: "Phase 5 : Communication & Influence",
-    date: "Modules 17-20",
-    responsibilities: [
-      "Maîtriser l'art de la communication authentique et impactante.",
-      "Développer votre charisme naturel et votre influence.",
-      "Créer des connexions profondes avec vos équipes et collaborateurs.",
-    ],
-  },
-  {
-    review: "Je me sens maintenant alignée avec qui je suis vraiment. J'ai trouvé ma voix et j'ose prendre ma place dans le monde professionnel.",
-    imgPath: "/images/exp6.png",
-    logoPath: "/images/logo6.png",
-    title: "Phase 6 : Alignement & Impact",
-    date: "Modules 21-24",
-    responsibilities: [
-      "Trouver votre voix authentique et votre mission personnelle.",
-      "Créer un impact durable dans votre domaine d'expertise.",
-      "Devenir un modèle inspirant pour d'autres femmes leaders.",
+      "Créer une marque personnelle qui vous distingue : Définir votre signature identitaire.",
+      "Sublimer votre image : Morphologie, colorimétrie, symbolique des couleurs.",
+      "Explorer et définir un style unique : Cohérence entre posture intérieure et image extérieure.",
+      "Session stratégique B2B : Visio personnalisée pour finaliser votre carte d'alignement et affiner votre stratégie de leadership.",
     ],
   },
 ];
@@ -233,50 +203,7 @@ const expLogos = [
   },
 ];
 
-const testimonials = [
-  {
-    name: "Marie Dubois",
-    mentions: "Dirigeante Tech",
-    review:
-      "SynapsLead a transformé ma façon de diriger. J'ai retrouvé ma clarté mentale et mon énergie durable. Plus de fatigue mentale, plus de surcharge invisible. Je me reconnais enfin dans mes réactions.",
-    imgPath: "/images/client1.png",
-  },
-  {
-    name: "Sophie Martin",
-    mentions: "Entrepreneure",
-    review:
-      "Grâce à SynapsLead, j'ai compris la différence entre confiance en soi et estime de soi. J'ai reconstruit une estime solide et stable, même dans l'adversité. Je n'ai plus à prouver ma place, je l'occupe naturellement.",
-    imgPath: "/images/client3.png",
-  },
-  {
-    name: "Claire Bernard",
-    mentions: "Manager Senior",
-    review:
-      "Découvrir mon archétype de leadership a été libérateur. J'ai arrêté de forcer un rôle qui ne m'appartenait pas. J'ai retrouvé mon élan, ma clarté et ma justesse relationnelle. SynapsLead m'a permis de reprendre la main sur ma trajectoire.",
-    imgPath: "/images/client2.png",
-  },
-  {
-    name: "Anne Moreau",
-    mentions: "Consultante",
-    review:
-      "Les protocoles de gestion du stress et de recentrage m'ont sauvée. Cohérence cardiaque, routines neuroactives, MentalBoost... J'ai des outils concrets pour rester alignée, posée et stratégique.",
-    imgPath: "/images/client5.png",
-  },
-  {
-    name: "Julie Leroy",
-    mentions: "Directrice Marketing",
-    review:
-      "SynapsLead agit en profondeur, là où les approches classiques échouent. J'ai réorganisé mon système de pensée, mes schémas émotionnels et ma posture identitaire. Le résultat ? Une puissance visible et naturelle.",
-    imgPath: "/images/client4.png",
-  },
-  {
-    name: "Isabelle Petit",
-    mentions: "Chef de projet",
-    review:
-      "L'analyse transgénérationnelle m'a permis de comprendre mes conditionnements passés. J'ai cessé d'en être l'otage. Maintenant, je réajuste mon image extérieure pour qu'elle incarne avec justesse la femme que je suis devenue.",
-    imgPath: "/images/client6.png",
-  },
-];
+
 
 const socialImgs = [
   {
@@ -304,7 +231,6 @@ export {
   counterItems,
   expCards,
   expLogos,
-  testimonials,
   socialImgs,
   techStackIcons,
   techStackImgs,

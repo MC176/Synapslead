@@ -16,7 +16,7 @@ const Conferences = () => {
     {
       title: "Leadership & Neurosciences",
       date: "15-16 Mars 2024",
-      location: "Paris, France",
+      location: "Cannes, France",
       description: "Conférence internationale sur l'application des neurosciences au leadership féminin",
       audience: "Dirigeantes, entrepreneures, managers",
       image: "/images/conference1.jpg",

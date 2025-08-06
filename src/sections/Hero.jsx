@@ -265,14 +265,21 @@ const Hero = () => {
                 <div className="absolute bottom-6 left-6 w-8 h-8 bg-gradient-to-br from-[#e7d3cb]/10 to-[#d9b8b0]/10 rounded-full"></div>
                 
                 <blockquote className="relative z-10">
-                  {/* Texte de la citation avec guillemets intégrés */}
+                  {/* Texte de la citation */}
                   <p className="text-xl md:text-2xl lg:text-3xl font-light text-slate-800 leading-relaxed mb-6 italic">
                     "Et si votre façon de diriger devenait enfin le reflet de qui vous êtes vraiment?"
                   </p>
                   
                   {/* Section auteur et signature */}
-                  <div className="flex items-center justify-end gap-6 mt-8 pt-6 border-t border-slate-200/50">
-                    {/* Informations de l'auteur */}
+                  <div className="flex items-center justify-between gap-6 mt-8 pt-6 border-t border-slate-200/50">
+                    {/* Texte d'expérience - à gauche */}
+                    <div className="flex-1 max-w-md">
+                      <p className="text-base text-slate-600 leading-relaxed text-justify">
+                        Forte de 27 années d'expérience, et de fondements scientifiques et des protocoles éprouvés, je suis là pour vous aider à développer votre leadership.
+                      </p>
+                    </div>
+
+                    {/* Informations de l'auteur - à droite */}
                     <div className="flex items-center gap-4">
                       <div className="relative">
                         <img 

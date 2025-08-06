@@ -89,15 +89,15 @@ const Experience = () => {
           
           {/* Timeline centrale moderne */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full">
-            <div className="w-full h-full bg-gradient-to-b from-black via-gray-800 to-gray-600 rounded-full shadow-lg"></div>
+            <div className="w-full h-full bg-gradient-to-b from-orange-500 via-yellow-500 to-purple-500 rounded-full shadow-lg"></div>
             {/* Points de connexion */}
-            <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-black rounded-full shadow-lg"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gray-800 rounded-full shadow-lg"></div>
-            <div className="absolute top-3/4 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gray-600 rounded-full shadow-lg"></div>
+            <div className="absolute top-1/6 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-orange-500 rounded-full shadow-lg"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-yellow-500 rounded-full shadow-lg"></div>
+            <div className="absolute top-5/6 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full shadow-lg"></div>
           </div>
           
           {/* Conteneur pour les cartes */}
-          <div className="relative z-50 space-y-24">
+          <div className="relative z-50 space-y-32">
             {expCards.map((card, index) => {
               const isLeft = index % 2 === 0;
               
@@ -112,7 +112,10 @@ const Experience = () => {
                       <div className="expText flex flex-col gap-6">
                         {/* En-tête avec phase */}
                         <div className="mb-6">
-                          <h1 className="font-black text-3xl text-black">{card.title}</h1>
+                          <h1 className="font-black text-2xl text-black mb-2">{card.title}</h1>
+                          {card.subtitle && (
+                            <p className="text-lg text-gray-600 font-medium italic">{card.subtitle}</p>
+                          )}
                         </div>
                         
                         {/* Date */}
