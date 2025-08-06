@@ -271,37 +271,21 @@ const Hero = () => {
                   </p>
                   
                   {/* Section auteur et signature */}
-                  <div className="flex items-center justify-between mt-6 pt-4 border-t border-slate-200/50">
+                  <div className="flex items-center justify-end gap-6 mt-8 pt-6 border-t border-slate-200/50">
                     {/* Informations de l'auteur */}
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-4">
                       <div className="relative">
                         <img 
                           src="/images/Brigitte.png" 
                           alt="Brigitte - Fondatrice"
-                          className="w-12 h-12 rounded-full object-cover shadow-lg ring-2 ring-white"
+                          className="w-20 h-20 rounded-full object-cover shadow-lg ring-2 ring-white"
                         />
                         <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#d9b8b0]/20 to-[#e7d3cb]/20"></div>
                       </div>
                       <div>
-                        <p className="font-semibold text-slate-800 text-base">Brigitte</p>
-                        <p className="text-xs text-slate-600 font-medium">Fondatrice SynapsLead</p>
+                        <p className="font-semibold text-slate-800 text-lg">Brigitte</p>
+                        <p className="text-sm text-slate-600 font-medium">Fondatrice SynapsLead</p>
                       </div>
-                    </div>
-                    
-                    {/* Signature élégante */}
-                    <div className="relative">
-                      <div className="w-32 h-12 flex items-center justify-center bg-gradient-to-r from-slate-50 to-white rounded-lg border border-slate-200/50 shadow-sm">
-                        <img 
-                          src="/images/signature-brigitte.png" 
-                          alt="Signature de Brigitte"
-                          className="w-28 h-10 object-contain opacity-90"
-                          onError={(e) => {
-                            e.target.style.display = 'none';
-                          }}
-                        />
-                      </div>
-                      {/* Effet de brillance subtil */}
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent rounded-lg opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                   </div>
                 </blockquote>

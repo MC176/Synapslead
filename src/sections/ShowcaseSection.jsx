@@ -113,10 +113,10 @@ const AppShowcase = () => {
             </div>
             <div className="video-text-content">
               <h2 className="text-black font-semibold text-xl mb-2">
-                Psychologie appliquée
+                Psychologie positive
               </h2>
               <p className="text-black text-base leading-relaxed">
-                Approche intégrée combinant psychologie cognitive et comportementale 
+                Approche intégrée combinant psychologie positive 
                 pour un développement personnel optimal.
               </p>
             </div>
