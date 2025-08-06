@@ -75,6 +75,13 @@ const AppShowcase = () => {
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
+        {/* Titre de la section */}
+        <div className="text-center mb-8">
+          <h2 className="text-4xl font-bold text-black mb-4">
+            Les Fondamentaux de SynapsLead
+          </h2>
+        </div>
+        
         <div className="showcaselayout">
           {/* Première vidéo - Neurosciences */}
           <div ref={neuroscienceRef} className="video-showcase-item">
@@ -90,11 +97,10 @@ const AppShowcase = () => {
             </div>
             <div className="video-text-content">
               <h2 className="text-black font-semibold text-xl mb-2">
-                Neurosciences
+                Neurophysiologie et Clarté mentale
               </h2>
               <p className="text-black text-base leading-relaxed">
-                Fondée sur les dernières avancées en neurosciences pour optimiser 
-                le développement du leadership féminin.
+                Optimisez les ressources de votre cerveau et de votre corps pour retrouver une énergie stable et une prise de décision plus fluide.
               </p>
             </div>
           </div>
@@ -113,11 +119,10 @@ const AppShowcase = () => {
             </div>
             <div className="video-text-content">
               <h2 className="text-black font-semibold text-xl mb-2">
-                Psychologie positive
+                Estime de soi & Autorité intérieure
               </h2>
               <p className="text-black text-base leading-relaxed">
-                Approche intégrée combinant psychologie positive 
-                pour un développement personnel optimal.
+                Ancrez une estime de soi juste et profonde qui ne vacille plus face aux doutes ou aux injonctions extérieures.
               </p>
             </div>
           </div>
@@ -136,11 +141,10 @@ const AppShowcase = () => {
             </div>
             <div className="video-text-content">
               <h2 className="text-black font-semibold text-xl mb-2">
-                Analyse transgénérationnelle
+                Image, Style & Leadership incarné
               </h2>
               <p className="text-black text-base leading-relaxed">
-                Exploration des patterns familiaux et transgénérationnels pour 
-                libérer le potentiel de leadership.
+                Révélez une image alignée avec votre posture intérieure grâce à une approche fondée sur le langage non-verbal, la colorimétrie et l'intelligence du style.
               </p>
             </div>
           </div>

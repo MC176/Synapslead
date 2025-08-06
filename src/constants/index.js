@@ -15,10 +15,6 @@ const navLinks = [
     name: "Conférences",
     link: "#conferences",
   },
-  {
-    name: "Témoignages",
-    link: "#testimonials",
-  },
 ];
 
 const words = [
@@ -74,23 +70,7 @@ const logoIconsList = [
   },
 ];
 
-const abilities = [
-  {
-    imgPath: "/images/seo.png",
-    title: "Neurophysiologie et Clarté mentale",
-    desc: "Optimisez les ressources de votre cerveau et de votre corps pour retrouver une énergie stable et une prise de décision plus fluide.",
-  },
-  {
-    imgPath: "/images/chat.png",
-    title: "Estime de soi & Autorité intérieure",
-    desc: "Ancrez une estime de soi juste et profonde qui ne vacille plus face aux doutes ou aux injonctions extérieures.",
-  },
-  {
-    imgPath: "/images/time.png",
-    title: "Image, Style & Leadership incarné",
-    desc: "Révélez une image alignée avec votre posture intérieure grâce à une approche fondée sur le langage non-verbla, la colorimétrie et l'intelligence du style.",
-  },
-];
+
 
 const techStackImgs = [
   {
@@ -226,7 +206,6 @@ const socialImgs = [
 
 export {
   words,
-  abilities,
   logoIconsList,
   counterItems,
   expCards,

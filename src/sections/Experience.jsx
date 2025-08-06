@@ -74,11 +74,11 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="landing-section flex-center md:mt-40 mt-20 section-padding xl:px-0 relative"
+      className="landing-section flex-center section-padding xl:px-0 relative"
     >
       
       <div className="w-full h-full md:px-20 px-5 relative z-10">
-        <div className="mt-32 relative">
+        <div className="mt-8 relative">
           {/* Titre de la section */}
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">
