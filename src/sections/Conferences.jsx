@@ -23,7 +23,7 @@ const Conferences = () => {
       link: "#"
     },
     {
-      title: "SynapsLead® Masterclass",
+      title: "SynapsLead Masterclass",
       date: "22-23 Avril 2024",
       location: "Monaco",
       description: "Masterclass intensive de 2 jours pour transformer votre leadership",
@@ -120,7 +120,7 @@ const Conferences = () => {
                 <h3 className="text-4xl font-bold mb-6">Monaco Image Consulting</h3>
                 <p className="text-xl mb-8 opacity-90 leading-relaxed">
                   Mon cabinet de coaching spécialisé dans l'accompagnement personnalisé des femmes dirigeantes. 
-                  C'est ici que j'applique concrètement la méthode SynapsLead® au quotidien.
+                  C'est ici que j'applique concrètement la méthode SynapsLead au quotidien.
                 </p>
                 
                 <div className="space-y-4 mb-8">

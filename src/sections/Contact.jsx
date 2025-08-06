@@ -81,7 +81,7 @@ const Contact = () => {
             </div>
             <h3 className="text-2xl font-bold text-gray-800 mb-4">Message envoyé !</h3>
             <p className="text-gray-600 mb-6">
-              Notre équipe SynapsLead® vous recontactera dans les 24h.
+              Notre équipe SynapsLead vous recontactera dans les 24h.
             </p>
             <button
               onClick={() => {

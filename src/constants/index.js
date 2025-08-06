@@ -145,7 +145,7 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "SynapsLead® m'a permis de comprendre mon fonctionnement neurologique et d'identifier mes zones de stress chronique. J'ai retrouvé ma clarté mentale.",
+    review: "SynapsLead m'a permis de comprendre mon fonctionnement neurologique et d'identifier mes zones de stress chronique. J'ai retrouvé ma clarté mentale.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     title: "Phase 1 : Diagnostic & Fondations",
@@ -181,7 +181,7 @@ const expCards = [
     ],
   },
   {
-    review: "Grâce à SynapsLead®, j'ai découvert mes patterns de stress et appris à les gérer efficacement. Ma productivité a augmenté de 40%.",
+    review: "Grâce à SynapsLead, j'ai découvert mes patterns de stress et appris à les gérer efficacement. Ma productivité a augmenté de 40%.",
     imgPath: "/images/exp4.png",
     logoPath: "/images/logo4.png",
     title: "Phase 4 : Optimisation & Performance",
@@ -238,21 +238,21 @@ const testimonials = [
     name: "Marie Dubois",
     mentions: "Dirigeante Tech",
     review:
-      "SynapsLead® a transformé ma façon de diriger. J'ai retrouvé ma clarté mentale et mon énergie durable. Plus de fatigue mentale, plus de surcharge invisible. Je me reconnais enfin dans mes réactions.",
+      "SynapsLead a transformé ma façon de diriger. J'ai retrouvé ma clarté mentale et mon énergie durable. Plus de fatigue mentale, plus de surcharge invisible. Je me reconnais enfin dans mes réactions.",
     imgPath: "/images/client1.png",
   },
   {
     name: "Sophie Martin",
     mentions: "Entrepreneure",
     review:
-      "Grâce à SynapsLead®, j'ai compris la différence entre confiance en soi et estime de soi. J'ai reconstruit une estime solide et stable, même dans l'adversité. Je n'ai plus à prouver ma place, je l'occupe naturellement.",
+      "Grâce à SynapsLead, j'ai compris la différence entre confiance en soi et estime de soi. J'ai reconstruit une estime solide et stable, même dans l'adversité. Je n'ai plus à prouver ma place, je l'occupe naturellement.",
     imgPath: "/images/client3.png",
   },
   {
     name: "Claire Bernard",
     mentions: "Manager Senior",
     review:
-      "Découvrir mon archétype de leadership a été libérateur. J'ai arrêté de forcer un rôle qui ne m'appartenait pas. J'ai retrouvé mon élan, ma clarté et ma justesse relationnelle. SynapsLead® m'a permis de reprendre la main sur ma trajectoire.",
+      "Découvrir mon archétype de leadership a été libérateur. J'ai arrêté de forcer un rôle qui ne m'appartenait pas. J'ai retrouvé mon élan, ma clarté et ma justesse relationnelle. SynapsLead m'a permis de reprendre la main sur ma trajectoire.",
     imgPath: "/images/client2.png",
   },
   {
@@ -266,7 +266,7 @@ const testimonials = [
     name: "Julie Leroy",
     mentions: "Directrice Marketing",
     review:
-      "SynapsLead® agit en profondeur, là où les approches classiques échouent. J'ai réorganisé mon système de pensée, mes schémas émotionnels et ma posture identitaire. Le résultat ? Une puissance visible et naturelle.",
+      "SynapsLead agit en profondeur, là où les approches classiques échouent. J'ai réorganisé mon système de pensée, mes schémas émotionnels et ma posture identitaire. Le résultat ? Une puissance visible et naturelle.",
     imgPath: "/images/client4.png",
   },
   {

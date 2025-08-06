@@ -1,6 +1,6 @@
 # Vidéos pour les cartes TechStack
 
-Ce dossier contient les vidéos qui s'affichent au survol des cartes dans la section "L'Approche SynapsLead®".
+Ce dossier contient les vidéos qui s'affichent au survol des cartes dans la section "L'Approche SynapsLead".
 
 ## Structure des fichiers
 

@@ -9,7 +9,7 @@ const Testimonials = () => {
       
       <div className="w-full h-full md:px-10 px-5 relative z-10">
         <TitleHeader
-          title="Ce que disent les femmes qui ont suivi SynapsLead®"
+          title="Ce que disent les femmes qui ont suivi SynapsLead"
         />
 
         {/* Statistiques de satisfaction améliorées */}

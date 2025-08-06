@@ -127,7 +127,7 @@ const Hero = () => {
             {/* Main Title */}
             <h1 className="hero-title text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold leading-tight">
               <span className="bg-gradient-to-r from-white via-[#f5e3df] to-[#e7d3cb] bg-clip-text text-transparent drop-shadow-2xl">
-                SynapsLead®
+                SynapsLead
               </span>
               </h1>
 
@@ -283,7 +283,7 @@ const Hero = () => {
                       </div>
                       <div className="text-left">
                         <p className="font-bold text-gray-800 text-xl group-hover/author:text-[#d9b8b0] transition-colors duration-300">Brigitte</p>
-                        <p className="text-sm text-gray-600 font-medium">Fondatrice SynapsLead®</p>
+                        <p className="text-sm text-gray-600 font-medium">Fondatrice SynapsLead</p>
                       </div>
                     </div>
                     

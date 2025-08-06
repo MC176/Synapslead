@@ -38,7 +38,7 @@ const TechStack = () => {
     <div id="skills" className="landing-section flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
-          title="L'Approche SynapsLead®"
+          title="L'Approche SynapsLead"
         />
         <div className="tech-grid">
           {/* Cartes avec vidéos au survol */}

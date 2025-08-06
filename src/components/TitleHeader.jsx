@@ -4,7 +4,7 @@ const TitleHeader = ({ title, subtitle }) => {
       {/* Badge moderne */}
       <div className="inline-flex items-center gap-2 bg-black text-white px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg">
         <div className="w-2 h-2 bg-white rounded-full"></div>
-        SynapsLead®
+        SynapsLead
       </div>
       
       {/* Titre principal avec gradient */}

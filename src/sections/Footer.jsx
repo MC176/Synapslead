@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-center md:text-end text-black">
-            © {new Date().getFullYear()} SynapsLead®. Tous droits réservés.
+            © {new Date().getFullYear()} SynapsLead. Tous droits réservés.
           </p>
         </div>
       </div>

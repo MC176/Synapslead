@@ -21,7 +21,7 @@ const Books = () => {
   const books = [
     {
       title: "Leadership Féminin",
-      subtitle: "La méthode SynapsLead®",
+      subtitle: "La méthode SynapsLead",
       description: "Découvrez les fondements scientifiques de la transformation du leadership féminin. Un guide complet pour comprendre et appliquer les neurosciences au service de votre réussite.",
       cover: "/images/book1.jpg",
       amazonLink: "https://amazon.com/book1",
@@ -89,7 +89,7 @@ const Books = () => {
                     Bestseller #1
                   </div>
                   <h2 className="text-4xl lg:text-5xl font-bold mb-4">Leadership Féminin</h2>
-                  <h3 className="text-xl lg:text-2xl font-medium mb-6 opacity-90">La méthode SynapsLead®</h3>
+                  <h3 className="text-xl lg:text-2xl font-medium mb-6 opacity-90">La méthode SynapsLead</h3>
                   <p className="text-lg mb-8 opacity-90 leading-relaxed">
                     Le livre qui a transformé la vie de plus de 500 femmes dirigeantes. 
                     Découvrez les secrets des neurosciences appliquées au leadership féminin.
@@ -135,7 +135,7 @@ const Books = () => {
                         <div className="text-center">
                           <div className="text-8xl mb-4">📖</div>
                           <div className="text-2xl font-bold text-gray-800">Leadership Féminin</div>
-                          <div className="text-gray-600">La méthode SynapsLead®</div>
+                          <div className="text-gray-600">La méthode SynapsLead</div>
                         </div>
                       </div>
                     </div>
@@ -161,7 +161,7 @@ const Books = () => {
                         <div className="absolute inset-0 flex items-center justify-center">
                           <div className="text-center">
                             <div className="text-4xl mb-2">📚</div>
-                            <div className="text-xs font-bold text-gray-800">SynapsLead®</div>
+                            <div className="text-xs font-bold text-gray-800">SynapsLead</div>
                           </div>
                         </div>
                       </div>
@@ -224,7 +224,7 @@ const Books = () => {
             <div className="bg-white/90 backdrop-blur-md rounded-3xl p-12 shadow-2xl border border-white/30 max-w-4xl mx-auto">
               <h3 className="text-3xl font-bold text-gray-800 mb-4">Approfondissez vos connaissances</h3>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Ces livres vous donnent accès aux fondements théoriques et pratiques de la méthode SynapsLead®. 
+                Ces livres vous donnent accès aux fondements théoriques et pratiques de la méthode SynapsLead. 
                 Plus de 500 femmes ont déjà bénéficié de ces ouvrages.
               </p>
               <a

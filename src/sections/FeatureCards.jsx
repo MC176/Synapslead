@@ -4,7 +4,7 @@ import TitleHeader from "../components/TitleHeader";
 const FeatureCards = () => (
   <section className="landing-section w-full padding-x-lg py-20">
     <TitleHeader
-      title="Les Fondamentaux de SynapsLead®"
+      title="Les Fondamentaux de SynapsLead"
     />
     
     <div className="mx-auto grid-3-cols mt-16">

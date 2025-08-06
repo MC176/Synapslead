@@ -8,9 +8,11 @@ import Conferences from "./sections/Conferences";
 import Testimonials from "./sections/Testimonials";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import NewsletterPopup from "./components/NewsletterPopup";
 
 const App = () => (
   <>
+    <NewsletterPopup />
     <Navbar />
     <Hero />
     <FeatureCards />

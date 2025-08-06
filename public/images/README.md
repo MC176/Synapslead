@@ -1,4 +1,4 @@
-# Organisation des images pour SynapsLead®
+# Organisation des images pour SynapsLead
 
 ## Images principales à ajouter
 
