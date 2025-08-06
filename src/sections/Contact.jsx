@@ -187,6 +187,11 @@ const Contact = () => {
             {/* Formulaire */}
             <div className="p-8">
               <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+                {/* Champs cachés pour EmailJS */}
+                <input type="hidden" name="from_name" value={`${form.firstName} ${form.lastName}`} />
+                <input type="hidden" name="reply_to" value={form.email} />
+                <input type="hidden" name="message" value={form.message} />
+                
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -198,7 +203,7 @@ const Contact = () => {
                       value={form.firstName}
                       onChange={handleChange}
                       placeholder="Votre prénom"
-                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-[#d9b8b0] focus:border-[#d9b8b0] transition-all duration-200"
+                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-[#d9b8b0] focus:border-[#d9b8b0] transition-all duration-200 placeholder-gray-300"
                     />
                   </div>
                   <div>
@@ -211,7 +216,7 @@ const Contact = () => {
                       value={form.lastName}
                       onChange={handleChange}
                       placeholder="Votre nom"
-                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-[#d9b8b0] focus:border-[#d9b8b0] transition-all duration-200"
+                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-[#d9b8b0] focus:border-[#d9b8b0] transition-all duration-200 placeholder-gray-300"
                     />
                   </div>
                 </div>
@@ -227,7 +232,7 @@ const Contact = () => {
                       value={form.email}
                       onChange={handleChange}
                       placeholder="votre.email@exemple.com"
-                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-[#d9b8b0] focus:border-[#d9b8b0] transition-all duration-200"
+                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-[#d9b8b0] focus:border-[#d9b8b0] transition-all duration-200 placeholder-gray-300"
                     />
                   </div>
                   <div>
@@ -240,7 +245,7 @@ const Contact = () => {
                       value={form.phone}
                       onChange={handleChange}
                       placeholder="06 12 34 56 78"
-                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-[#d9b8b0] focus:border-[#d9b8b0] transition-all duration-200"
+                      className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-[#d9b8b0] focus:border-[#d9b8b0] transition-all duration-200 placeholder-gray-300"
                     />
                   </div>
                 </div>
@@ -255,7 +260,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Décrivez votre projet de transformation du leadership et vos objectifs..."
                     rows={5}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-[#d9b8b0] focus:border-[#d9b8b0] transition-all duration-200 resize-none"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-[#d9b8b0] focus:border-[#d9b8b0] transition-all duration-200 resize-none placeholder-gray-300"
                   />
                 </div>
 

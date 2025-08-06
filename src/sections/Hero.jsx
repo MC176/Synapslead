@@ -179,7 +179,7 @@ const Hero = () => {
           {/* Titre de la section */}
           <div className="text-center mb-12">
             <h2 className="method-title text-3xl md:text-4xl font-bold text-black mb-4">
-              Méthode brevetée
+              Méthode approuvée
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Une méthode unique, fondée sur les neurosciences, la neuronutrition, l’image stratégique et la psychologie positive.

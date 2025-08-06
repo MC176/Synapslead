@@ -139,11 +139,9 @@ const NewsletterPopup = () => {
             {/* Formulaire */}
             <form ref={formRef} onSubmit={handleSubmit} className="space-y-3">
               {/* Champs cachés pour EmailJS */}
-              <input type="hidden" name="firstName" value={firstName} />
-              <input type="hidden" name="lastName" value={lastName} />
-              <input type="hidden" name="email" value={email} />
+              <input type="hidden" name="from_name" value={`${firstName} ${lastName}`} />
+              <input type="hidden" name="reply_to" value={email} />
               <input type="hidden" name="message" value="Inscription newsletter - Conférence du 18 septembre 2025" />
-              <input type="hidden" name="phone" value="Non renseigné" />
               {/* Champs nom et prénom sur la même ligne */}
               <div className="flex space-x-3">
                 <div className="flex-1">

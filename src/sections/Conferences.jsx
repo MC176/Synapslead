@@ -19,7 +19,7 @@ const Conferences = () => {
       location: "Cannes, France",
       description: "Conférence internationale sur l'application des neurosciences au leadership féminin",
       audience: "Dirigeantes, entrepreneures, managers",
-      image: "/images/conference1.jpg",
+      image: "/images/conference1.png",
       link: "#"
     },
     {
@@ -28,7 +28,7 @@ const Conferences = () => {
       location: "Monaco",
       description: "Masterclass intensive de 2 jours pour transformer votre leadership",
       audience: "Femmes dirigeantes confirmées",
-      image: "/images/conference2.jpg",
+      image: "/images/conference2.png",
       link: "#"
     },
     {
@@ -37,7 +37,7 @@ const Conferences = () => {
       location: "Lyon, France",
       description: "Workshop pratique sur la reconstruction de l'estime de soi",
       audience: "Toutes les femmes en position de leadership",
-      image: "/images/conference3.jpg",
+      image: "/images/conference3.png",
       link: "#"
     }
   ];
@@ -61,11 +61,12 @@ const Conferences = () => {
                 <div key={index} className="conference-card group">
                   <div className="bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/30 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                     {/* Image de la conférence */}
-                    <div className="w-full h-48 bg-gradient-to-br from-[#f5e3df] to-[#e7d3cb] rounded-2xl flex items-center justify-center shadow-lg mb-6">
-                      <div className="text-center">
-                        <div className="text-4xl mb-2">🎤</div>
-                        <div className="text-sm text-gray-600">Conférence</div>
-                      </div>
+                    <div className="w-full h-48 bg-gradient-to-br from-[#f5e3df] to-[#e7d3cb] rounded-2xl flex items-center justify-center shadow-lg mb-6 overflow-hidden">
+                      <img 
+                        src={conference.image} 
+                        alt={conference.title}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
 
                     {/* Contenu */}

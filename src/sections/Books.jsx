@@ -23,8 +23,8 @@ const Books = () => {
       title: "Leadership Féminin",
       subtitle: "La méthode SynapsLead",
       description: "Découvrez les fondements scientifiques de la transformation du leadership féminin. Un guide complet pour comprendre et appliquer les neurosciences au service de votre réussite.",
-      cover: "/images/book1.jpg",
-      amazonLink: "https://amazon.com/book1",
+      cover: "/images/tome1.png",
+      amazonLink: "https://amazon.com",
       price: "24.90€",
       badge: "Bestseller",
       rating: 4.9,
@@ -37,8 +37,8 @@ const Books = () => {
       title: "Neurosciences & Leadership",
       subtitle: "Comprendre votre cerveau pour mieux diriger",
       description: "Les clés neurologiques pour optimiser votre potentiel de leadership. Apprenez à utiliser votre cerveau comme votre meilleur allié dans votre carrière.",
-      cover: "/images/book2.jpg",
-      amazonLink: "https://amazon.com/book2",
+      cover: "/images/tome2.png",
+      amazonLink: "https://amazon.com",
       price: "29.90€",
       badge: "Nouveau",
       rating: 4.8,
@@ -51,8 +51,8 @@ const Books = () => {
       title: "Estime de Soi & Autorité",
       subtitle: "Les piliers du leadership authentique",
       description: "Reconstruire une estime solide et développer votre autorité naturelle. Transformez vos doutes en force et votre vulnérabilité en puissance.",
-      cover: "/images/book3.jpg",
-      amazonLink: "https://amazon.com/book3",
+      cover: "/images/tome3.jpg",
+      amazonLink: "https://amazon.com",
       price: "26.90€",
       badge: "Populaire",
       rating: 4.9,
@@ -115,7 +115,7 @@ const Books = () => {
                       rel="noopener noreferrer"
                       className="bg-white text-[#d9b8b0] px-8 py-4 rounded-2xl font-bold hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-3 group"
                     >
-                      <span>Acheter sur Amazon</span>
+                      <span>Bientôt disponible</span>
                       <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                       </svg>
@@ -129,15 +129,12 @@ const Books = () => {
 
                 <div className="book-cover relative">
                   <div className="relative transform perspective-1000">
-                    <div className="w-full h-96 bg-gradient-to-br from-[#f5e3df] via-[#e7d3cb] to-[#d9b8b0] rounded-2xl shadow-2xl transform rotate-y-12 hover:rotate-y-0 transition-transform duration-700">
-                      <div className="absolute inset-0 bg-gradient-to-br from-[#d9b8b0]/20 to-[#e7d3cb]/20 rounded-2xl"></div>
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="text-center">
-                          <div className="text-8xl mb-4">📖</div>
-                          <div className="text-2xl font-bold text-gray-800">Leadership Féminin</div>
-                          <div className="text-gray-600">La méthode SynapsLead</div>
-                        </div>
-                      </div>
+                    <div className="w-64 h-96 rounded-2xl shadow-2xl transform rotate-y-12 hover:rotate-y-0 transition-transform duration-700 overflow-hidden">
+                      <img 
+                        src={books[0].cover} 
+                        alt={books[0].title}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                     <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg">
                       <span className="text-white font-bold text-lg">#1</span>
@@ -156,14 +153,13 @@ const Books = () => {
                   <div className="flex gap-6">
                     {/* Book Cover */}
                     <div className="book-cover flex-shrink-0">
-                      <div className="w-32 h-48 bg-gradient-to-br from-[#f5e3df] to-[#e7d3cb] rounded-xl shadow-lg transform rotate-y-6 group-hover:rotate-y-0 transition-transform duration-500">
+                      <div className="w-32 h-48 bg-gradient-to-br from-[#f5e3df] to-[#e7d3cb] rounded-xl shadow-lg transform rotate-y-6 group-hover:rotate-y-0 transition-transform duration-500 overflow-hidden">
+                        <img 
+                          src={book.cover} 
+                          alt={book.title}
+                          className="w-full h-full object-cover"
+                        />
                         <div className="absolute inset-0 bg-gradient-to-br from-[#d9b8b0]/20 to-[#e7d3cb]/20 rounded-xl"></div>
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="text-center">
-                            <div className="text-4xl mb-2">📚</div>
-                            <div className="text-xs font-bold text-gray-800">SynapsLead</div>
-                          </div>
-                        </div>
                       </div>
                     </div>
 
