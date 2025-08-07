@@ -140,7 +140,7 @@ const Contact = () => {
                 <MapPin className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold mb-2 text-black">Localisation</h3>
-              <p className="text-gray-700">Paris, France</p>
+              <p className="text-gray-700">Cannes sur RDV, France</p>
             </div>
           </div>
         </div>

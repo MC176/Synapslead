@@ -75,7 +75,7 @@ const TermsConditionsModal = () => {
               <div className="space-y-2 text-gray-600">
                 <p><strong>Éditeur :</strong> SynapsLead</p>
                 <p><strong>Fondatrice :</strong> Brigitte</p>
-                <p><strong>Adresse :</strong> Paris, France</p>
+                <p><strong>Adresse :</strong> Cannes, France</p>
                 <p><strong>Email :</strong> contact@synapslead.com</p>
                 <p><strong>Site web :</strong> www.synapslead.com</p>
               </div>
