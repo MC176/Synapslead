@@ -160,7 +160,7 @@ const Hero = () => {
               </div>
               <div className="w-px h-12 bg-gradient-to-b from-transparent via-white/30 to-transparent"></div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white">15 ans</div>
+                <div className="text-2xl md:text-3xl font-bold text-white">+5 ans</div>
                 <div className="text-sm text-white/80">De Réflexion</div>
               </div>
               <div className="w-px h-12 bg-gradient-to-b from-transparent via-white/30 to-transparent"></div>
@@ -168,6 +168,61 @@ const Hero = () => {
                 <div className="text-2xl md:text-3xl font-bold text-white">27</div>
                 <div className="text-sm text-white/80">Années d'Expérience</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Mantra - Message d'inspiration */}
+      <section className="landing-section py-16 bg-gradient-to-r from-[#d9b8b0]/5 via-white to-[#e7d3cb]/5">
+        <div className="container mx-auto px-5">
+          <div className="max-w-5xl mx-auto">
+            {/* Design en bande horizontale avec effet de profondeur */}
+            <div className="relative bg-gradient-to-r from-[#d9b8b0]/10 via-white to-[#e7d3cb]/10 rounded-2xl p-8 md:p-12 shadow-lg border border-[#d9b8b0]/20">
+              
+              {/* Ligne décorative en haut */}
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#d9b8b0] via-[#e7d3cb] to-[#d9b8b0] rounded-t-2xl"></div>
+              
+              {/* Contenu principal */}
+              <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+                
+                {/* Colonne gauche - Image de conférence */}
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <img 
+                      src="/images/conference1.jpg" 
+                      alt="Brigitte en conférence"
+                      className="w-24 h-32 md:w-28 md:h-36 object-cover rounded-lg shadow-xl"
+                    />
+                    {/* Effet de bordure subtil */}
+                    <div className="absolute inset-0 rounded-lg border-2 border-[#d9b8b0]/20"></div>
+                  </div>
+                </div>
+                
+                {/* Colonne droite - Texte du mantra */}
+                <div className="flex-1 text-center lg:text-left">
+                  <div className="space-y-4">
+                    <p className="text-lg md:text-xl lg:text-2xl font-light text-slate-700 leading-relaxed">
+                      <span className="text-[#d9b8b0] font-medium">À vous, femme brillante mais épuisée,</span> qui portez tout sans toujours savoir pourquoi, ou vous, qui ne vous sentez pas encore à votre place mais sentez que le moment est venu…
+                    </p>
+                    
+                    <div className="py-2">
+                      <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-slate-800 leading-tight">
+                        Reprenez votre juste place, non pas en forçant, ni en prouvant, mais en <span className="text-[#d9b8b0] font-bold">vous révélant</span>.
+                      </p>
+                    </div>
+                    
+                    {/* Signature discrète */}
+                    <div className="pt-4">
+                      <p className="text-sm text-slate-500 font-medium">— Brigitte, Fondatrice SynapsLead</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Éléments décoratifs flottants */}
+              <div className="absolute top-4 right-4 w-3 h-3 bg-[#d9b8b0]/40 rounded-full"></div>
+              <div className="absolute bottom-4 left-4 w-2 h-2 bg-[#e7d3cb]/40 rounded-full"></div>
             </div>
           </div>
         </div>
@@ -279,17 +334,17 @@ const Hero = () => {
                       </p>
                     </div>
 
-                    {/* Informations de l'auteur - à droite */}
-                    <div className="flex items-center gap-4">
+                    {/* Informations de l'auteur - centrées sous la photo */}
+                    <div className="flex flex-col items-center gap-3">
                       <div className="relative">
                         <img 
-                          src="/images/Brigitte.png" 
+                          src="/images/conference3.png" 
                           alt="Brigitte - Fondatrice"
                           className="w-20 h-20 rounded-full object-cover shadow-lg ring-2 ring-white"
                         />
                         <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#d9b8b0]/20 to-[#e7d3cb]/20"></div>
                       </div>
-                      <div>
+                      <div className="text-center">
                         <p className="font-semibold text-slate-800 text-lg">Brigitte</p>
                         <p className="text-sm text-slate-600 font-medium">Fondatrice SynapsLead</p>
                       </div>

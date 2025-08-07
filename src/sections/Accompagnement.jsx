@@ -22,6 +22,7 @@ const Accompagnement = () => {
         "3 RDV visio B2B",
         "1 atelier Mental Boost",
         "1 podcast personnalisé",
+        "Cours imprimables",
         "Accompagnement par chat (shopping, image, retours en visio)"
       ],
       popular: false
@@ -36,6 +37,7 @@ const Accompagnement = () => {
         "2 ateliers Mental Boost",
         "2 podcasts personnalisés",
         "Accompagnement visio en shopping",
+        "Cours imprimables",
         "Chat privé & feedbacks"
       ],
       popular: true
@@ -50,6 +52,7 @@ const Accompagnement = () => {
         "4 ateliers Mental Boost",
         "3 podcasts personnalisés",
         "3 caméras embarquées",
+        "Cours imprimables",
         "Livres offerts & cours imprimables",
       ],
       popular: false

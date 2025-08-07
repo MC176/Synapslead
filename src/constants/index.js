@@ -190,7 +190,7 @@ const mentalBoostWorkshops = [
     description: "Session intensive pour poser les bases de votre transformation. Travail sur l'ancrage, la clarté mentale et la stabilisation énergétique.",
     benefits: [
       "Techniques d'ancrage et de centrage",
-      "Exercices de respiration et méditation",
+      "Exercices de respiration",
       "Outils de gestion du stress et des émotions",
     ],
     schedule: "A disposition selon votre formule",
@@ -204,7 +204,6 @@ const mentalBoostWorkshops = [
     benefits: [
       "Techniques de déprogrammation mentale",
       "Exercices d'estime de soi renforcée",
-      "Méthodes de communication authentique",
       "Pratiques d'alignement intérieur-extérieur"
     ],
     schedule: "Sessions mensuelles de 2h",
@@ -232,10 +231,12 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    link: "https://www.instagram.com/brigitte_papadopoulos/?igsh=NHg0MjFqZ3RyM2Y%3D&utm_source=qr#",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    link: "https://www.linkedin.com/in/bri-papadopoulos-conseil-en-image-et-d%C3%A9veloppement-c-74040a273/",
   },
 ];
 

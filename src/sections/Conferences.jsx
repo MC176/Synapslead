@@ -15,7 +15,7 @@ const Conferences = () => {
   const conferences = [
     {
       title: "Leadership & Neurosciences",
-      date: "15-16 Mars 2024",
+      date: "18 Septembre 2025",
       location: "Cannes, France",
       description: "Conférence internationale sur l'application des neurosciences au leadership féminin",
       audience: "Dirigeantes, entrepreneures, managers",
@@ -24,7 +24,7 @@ const Conferences = () => {
     },
     {
       title: "SynapsLead Masterclass",
-      date: "22-23 Avril 2024",
+      date: "A venir",
       location: "Monaco",
       description: "Masterclass intensive de 2 jours pour transformer votre leadership",
       audience: "Femmes dirigeantes confirmées",
@@ -33,7 +33,7 @@ const Conferences = () => {
     },
     {
       title: "Estime de Soi & Autorité",
-      date: "10-11 Mai 2024",
+      date: "A venir",
       location: "Lyon, France",
       description: "Workshop pratique sur la reconstruction de l'estime de soi",
       audience: "Toutes les femmes en position de leadership",
