@@ -271,10 +271,10 @@ const Hero = () => {
                   </p>
                   
                   {/* Section auteur et signature */}
-                  <div className="flex items-center justify-between gap-6 mt-8 pt-6 border-t border-slate-200/50">
+                                      <div className="flex flex-col lg:flex-row items-center lg:justify-between gap-6 mt-8 pt-6 border-t border-slate-200/50">
                     {/* Texte d'expérience - à gauche */}
-                    <div className="flex-1 max-w-md">
-                      <p className="text-base text-slate-600 leading-relaxed text-justify">
+                    <div className="flex-1 max-w-md text-center lg:text-left">
+                                              <p className="text-sm lg:text-base text-slate-600 leading-relaxed lg:text-justify">
                       Forte de 27 ans d’expérience et d’une méthode fondée sur la science et l’expertise de terrain, j’aide les femmes à prendre pleinement leur place et à incarner un leadership affirmé.
                       </p>
                     </div>

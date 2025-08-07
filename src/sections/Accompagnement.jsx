@@ -114,18 +114,20 @@ const Accompagnement = () => {
                   </div>
 
                   {/* CTA Button */}
-                  <button className={`w-full py-4 rounded-2xl font-bold transition-all duration-300 hover:-translate-y-1 group ${
-                    formule.popular
-                      ? 'bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] text-white hover:from-[#e7d3cb] hover:to-[#d9b8b0]'
-                      : 'bg-white text-gray-800 border-2 border-gray-300 hover:border-gray-400'
-                  }`}>
+                  <a 
+                    href="#contact"
+                    className={`w-full py-4 rounded-2xl font-bold transition-all duration-300 hover:-translate-y-1 group block ${
+                      formule.popular
+                        ? 'bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] text-white hover:from-[#e7d3cb] hover:to-[#d9b8b0]'
+                        : 'bg-white text-gray-800 border-2 border-gray-300 hover:border-gray-400'
+                    }`}>
                     <span className="flex items-center justify-center gap-2">
                       Commencer maintenant
                       <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                       </svg>
                     </span>
-                  </button>
+                  </a>
                 </div>
               </div>
             ))}
