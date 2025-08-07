@@ -121,7 +121,7 @@ const Conferences = () => {
                 <h3 className="text-4xl font-bold mb-6">Monaco Image Consulting</h3>
                 <p className="text-xl mb-8 opacity-90 leading-relaxed">
                 Mon espace dédié à l’accompagnement stratégique des femmes dirigeantes.
-                C’est ici que la méthode SynapsLead™ prend vie, dans des parcours sur mesure qui allient transformation intérieure et affirmation extérieure.
+                C’est ici que la méthode SynapsLead prend vie, dans des parcours sur mesure qui allient transformation intérieure et affirmation extérieure.
                 Accompagnement individuel, interventions en entreprise, programmes personnalisés à haute valeur ajoutée.
                 </p>
                 
