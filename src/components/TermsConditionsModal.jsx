@@ -74,7 +74,7 @@ const TermsConditionsModal = () => {
               <h3 className="text-xl font-bold text-gray-800 mb-4">Informations légales</h3>
               <div className="space-y-2 text-gray-600">
                 <p><strong>Éditeur :</strong> SynapsLead</p>
-                <p><strong>Fondatrice :</strong> Brigitte</p>
+                <p><strong>Fondatrice :</strong> Brigitte Papadopoulos</p>
                 <p><strong>Adresse :</strong> Cannes, France</p>
                 <p><strong>Email :</strong> contact@synapslead.com</p>
                 <p><strong>Site web :</strong> www.synapslead.com</p>
