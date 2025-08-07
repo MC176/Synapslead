@@ -242,7 +242,7 @@ const Hero = () => {
               {/* Ligne de séparation horizontale */}
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <div className="text-center">
-                  <p className="text-gray-500 text-medium font-medium">
+                  <p className="text-gray-500 text-2xl font-medium">
                     Le Leadership ne se décrète pas, il se construit.
                   </p>
                 </div>
@@ -275,7 +275,7 @@ const Hero = () => {
                     {/* Texte d'expérience - à gauche */}
                     <div className="flex-1 max-w-md">
                       <p className="text-base text-slate-600 leading-relaxed text-justify">
-                        Forte de 27 années d'expérience, et de fondements scientifiques et des protocoles éprouvés, je suis là pour vous aider à développer votre leadership.
+                      Forte de 27 ans d’expérience et d’une méthode fondée sur la science et l’expertise de terrain, j’aide les femmes à prendre pleinement leur place et à incarner un leadership affirmé.
                       </p>
                     </div>
 
