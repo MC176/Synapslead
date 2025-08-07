@@ -89,11 +89,11 @@ const Experience = () => {
           
           {/* Timeline centrale moderne */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full">
-            <div className="w-full h-full bg-gradient-to-b from-orange-500 via-yellow-500 to-purple-500 rounded-full shadow-lg"></div>
+            <div className="w-full h-full bg-gradient-to-b from-[#d9b8b0] via-[#e7d3cb] to-[#f5e3df] rounded-full shadow-lg"></div>
             {/* Points de connexion */}
-            <div className="absolute top-1/6 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-orange-500 rounded-full shadow-lg"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-yellow-500 rounded-full shadow-lg"></div>
-            <div className="absolute top-5/6 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full shadow-lg"></div>
+            <div className="absolute top-1/6 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#d9b8b0] rounded-full shadow-lg"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#e7d3cb] rounded-full shadow-lg"></div>
+            <div className="absolute top-5/6 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#f5e3df] rounded-full shadow-lg"></div>
           </div>
           
           {/* Conteneur pour les cartes */}
