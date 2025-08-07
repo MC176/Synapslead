@@ -82,7 +82,7 @@ const Books = () => {
           <div className="mb-10 md:mb-20">
             <div className="bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] rounded-2xl md:rounded-4xl p-6 md:p-12 text-white relative overflow-hidden">
               <div className="absolute inset-0 bg-black/10"></div>
-              <div className="relative z-10 grid lg:grid-cols-2 gap-6 md:gap-12 items-center">
+              <div className="relative z-10 grid lg:grid-cols-2 gap-6 md:gap-12 items-start lg:items-center">
                 <div>
                   <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-6">
                     <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
@@ -90,19 +90,19 @@ const Books = () => {
                   </div>
                   <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4">Leadership Féminin</h2>
                   <h3 className="text-lg md:text-xl lg:text-2xl font-medium mb-4 md:mb-6 opacity-90">La méthode SynapsLead</h3>
-                  <p className="text-base md:text-lg mb-6 md:mb-8 opacity-90 leading-relaxed">
+                  <p className="text-sm md:text-base lg:text-lg mb-6 md:mb-8 opacity-90 leading-relaxed">
                     Le SOCLE, c'est la base qu'on n'enseigne jamais aux femmes leaders.
                     Apprendre à nourrir son cerveau, à écouter son stress, à réhabiter son corps avant de vouloir convaincre le monde.
                     Une fondation intérieure essentielle pour rayonner sans s'épuiser.
                   </p>
                 
 
-                  <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                     <a
                       href={books[0].amazonLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-white text-[#d9b8b0] px-8 py-4 rounded-2xl font-bold hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-3 group"
+                      className="bg-white text-[#d9b8b0] px-6 md:px-8 py-3 md:py-4 rounded-2xl font-bold hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-3 group"
                     >
                       <span>Bientôt disponible</span>
                       <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -110,15 +110,15 @@ const Books = () => {
                       </svg>
                     </a>
                     <div className="text-center sm:text-left">
-                      <div className="text-3xl font-bold">20.00€</div>
-                      <div className="text-sm opacity-80">Broché + E-book inclus</div>
+                      <div className="text-2xl md:text-3xl font-bold">20.00€</div>
+                      <div className="text-xs md:text-sm opacity-80">Broché + E-book inclus</div>
                     </div>
                   </div>
                 </div>
 
-                <div className="book-cover relative flex justify-center lg:justify-end">
+                <div className="book-cover relative flex justify-center lg:justify-end mt-6 lg:mt-0">
                   <div className="relative transform perspective-1000">
-                    <div className="w-48 h-72 md:w-64 md:h-96 rounded-2xl shadow-2xl transform rotate-y-12 hover:rotate-y-0 transition-transform duration-700 overflow-hidden">
+                    <div className="w-40 h-60 sm:w-48 sm:h-72 md:w-64 md:h-96 rounded-2xl shadow-2xl transform rotate-y-12 hover:rotate-y-0 transition-transform duration-700 overflow-hidden">
                       <img 
                         src={books[0].cover} 
                         alt={books[0].title}
@@ -142,7 +142,7 @@ const Books = () => {
                   <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
                     {/* Book Cover */}
                     <div className="book-cover flex-shrink-0 flex justify-center sm:justify-start">
-                      <div className="w-24 h-36 sm:w-32 sm:h-48 bg-gradient-to-br from-[#f5e3df] to-[#e7d3cb] rounded-xl shadow-lg transform rotate-y-6 group-hover:rotate-y-0 transition-transform duration-500 overflow-hidden">
+                      <div className="w-20 h-30 sm:w-24 sm:h-36 md:w-32 md:h-48 bg-gradient-to-br from-[#f5e3df] to-[#e7d3cb] rounded-xl shadow-lg transform rotate-y-6 group-hover:rotate-y-0 transition-transform duration-500 overflow-hidden">
                         <img 
                           src={book.cover} 
                           alt={book.title}
@@ -159,11 +159,11 @@ const Books = () => {
                           <span className="w-2 h-2 bg-white rounded-full"></span>
                           {book.badge}
                         </div>
-                        <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">{book.title}</h3>
-                        <p className="text-[#d9b8b0] font-medium text-sm md:text-base">{book.subtitle}</p>
+                        <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 mb-2">{book.title}</h3>
+                        <p className="text-[#d9b8b0] font-medium text-xs md:text-sm lg:text-base">{book.subtitle}</p>
                       </div>
                       
-                      <p className="text-gray-600 text-xs md:text-sm leading-relaxed">
+                      <p className="text-gray-600 text-xs md:text-sm leading-relaxed line-clamp-4 md:line-clamp-none">
                         {book.description}
                       </p>
 
@@ -171,7 +171,7 @@ const Books = () => {
 
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-4">
                         <div>
-                          <div className="text-2xl font-bold text-[#d9b8b0]">{book.price}</div>
+                          <div className="text-xl md:text-2xl font-bold text-[#d9b8b0]">{book.price}</div>
                           <div className="text-xs text-gray-500">{book.format}</div>
                         </div>
                         <a
