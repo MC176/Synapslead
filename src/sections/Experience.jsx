@@ -104,17 +104,17 @@ const Experience = () => {
               return (
                 <div 
                   key={card.title} 
-                  className={`timeline-card flex items-center ${isLeft ? 'flex-row' : 'flex-row-reverse'} gap-16 max-w-7xl mx-auto`}
+                  className={`timeline-card flex flex-col lg:flex-row items-center ${isLeft ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-16 max-w-7xl mx-auto`}
                 >
                   {/* Phase - Unique */}
-                  <div className={`w-1/2 ${isLeft ? 'pr-8' : 'pl-8'} ${isLeft ? 'left-block' : 'right-block'}`}>
-                    <div className="bg-white/95 backdrop-blur-md rounded-3xl p-10 shadow-xl border border-black/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-                      <div className="expText flex flex-col gap-6">
+                  <div className={`w-full lg:w-1/2 ${isLeft ? 'lg:pr-8' : 'lg:pl-8'} ${isLeft ? 'left-block' : 'right-block'}`}>
+                    <div className="bg-white/95 backdrop-blur-md rounded-2xl lg:rounded-3xl p-6 lg:p-10 shadow-xl border border-black/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                      <div className="expText flex flex-col gap-4 lg:gap-6">
                         {/* En-tête avec phase */}
-                        <div className="mb-6">
-                          <h1 className="font-black text-2xl text-black mb-2">{card.title}</h1>
+                        <div className="mb-4 lg:mb-6">
+                          <h1 className="font-black text-xl lg:text-2xl text-black mb-2">{card.title}</h1>
                           {card.subtitle && (
-                            <p className="text-lg text-gray-600 font-medium italic">{card.subtitle}</p>
+                            <p className="text-base lg:text-lg text-gray-600 font-medium italic">{card.subtitle}</p>
                           )}
                         </div>
                         
@@ -125,22 +125,22 @@ const Experience = () => {
                         </div>
                         
                         {/* Témoignage avec hauteur fixe */}
-                        <div className="bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] rounded-2xl p-6 border-l-4 border-[#d9b8b0] h-32 flex items-center">
-                          <p className="text-gray-700 italic text-lg leading-relaxed">
+                        <div className="bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] rounded-2xl p-4 lg:p-6 border-l-4 border-[#d9b8b0] h-24 lg:h-32 flex items-center">
+                          <p className="text-gray-700 italic text-sm lg:text-lg leading-relaxed">
                             "{card.review}"
                           </p>
                         </div>
                         
                         {/* Bénéfices */}
                         <div>
-                          <h3 className="font-bold text-xl text-black mb-4 flex items-center gap-2">
+                          <h3 className="font-bold text-lg lg:text-xl text-black mb-3 lg:mb-4 flex items-center gap-2">
                             <span className="w-6 h-6 bg-black rounded-full flex items-center justify-center text-white text-sm">✓</span>
                             Bénéfices concrets
                           </h3>
-                          <ul className="space-y-3">
+                          <ul className="space-y-2 lg:space-y-3">
                             {card.responsibilities.map(
                               (responsibility, idx) => (
-                                <li key={idx} className="text-gray-700 font-medium text-lg flex items-start gap-3">
+                                <li key={idx} className="text-gray-700 font-medium text-sm lg:text-lg flex items-start gap-3">
                                   <span className="w-2 h-2 bg-gray-600 rounded-full mt-3 flex-shrink-0"></span>
                                   {responsibility}
                                 </li>
@@ -153,13 +153,13 @@ const Experience = () => {
                   </div>
 
                   {/* Rectangle MentalBoost à droite */}
-                  <div className={`w-1/2 ${isLeft ? 'pl-8' : 'pr-8'} ${isLeft ? 'right-block' : 'left-block'} -mt-32`}>
-                    <div className="bg-gradient-to-br from-rose-50/30 to-white rounded-3xl p-10 shadow-xl border border-black/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-                      <div className="expText flex flex-col gap-6">
+                  <div className={`w-full lg:w-1/2 ${isLeft ? 'lg:pl-8' : 'lg:pr-8'} ${isLeft ? 'right-block' : 'left-block'} lg:-mt-32`}>
+                    <div className="bg-gradient-to-br from-rose-50/30 to-white rounded-2xl lg:rounded-3xl p-6 lg:p-10 shadow-xl border border-black/20 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                      <div className="expText flex flex-col gap-4 lg:gap-6">
                         {/* En-tête MentalBoost */}
-                        <div className="mb-6">
-                          <h2 className="font-black text-2xl text-black mb-2">{mentalBoostWorkshops[index].title}</h2>
-                          <p className="text-lg text-gray-600 font-medium italic">{mentalBoostWorkshops[index].subtitle}</p>
+                        <div className="mb-4 lg:mb-6">
+                                                      <h2 className="font-black text-xl lg:text-2xl text-black mb-2">{mentalBoostWorkshops[index].title}</h2>
+                            <p className="text-base lg:text-lg text-gray-600 font-medium italic">{mentalBoostWorkshops[index].subtitle}</p>
                         </div>
                         
                         {/* Badge de phase */}
@@ -169,22 +169,22 @@ const Experience = () => {
                         </div>
                         
                         {/* Description avec hauteur fixe (comme le témoignage) */}
-                        <div className="bg-gradient-to-r from-[#e7d3cb] to-[#f7e2d9] rounded-2xl p-6 border-l-4 border-[#e7d3cb] h-32 flex items-center">
-                          <p className="text-gray-700 text-lg leading-relaxed">
+                        <div className="bg-gradient-to-r from-[#e7d3cb] to-[#f7e2d9] rounded-2xl p-4 lg:p-6 border-l-4 border-[#e7d3cb] h-24 lg:h-32 flex items-center">
+                          <p className="text-gray-700 text-sm lg:text-lg leading-relaxed">
                             {mentalBoostWorkshops[index].description}
                           </p>
                         </div>
                         
                         {/* Avantages */}
                         <div>
-                          <h3 className="font-bold text-xl text-black mb-4 flex items-center gap-2">
+                          <h3 className="font-bold text-lg lg:text-xl text-black mb-3 lg:mb-4 flex items-center gap-2">
                             <span className="w-6 h-6 bg-black rounded-full flex items-center justify-center text-white text-sm">⚡</span>
                             Avantages de l'atelier
                           </h3>
-                          <ul className="space-y-3">
+                          <ul className="space-y-2 lg:space-y-3">
                             {mentalBoostWorkshops[index].benefits.map(
                               (benefit, idx) => (
-                                <li key={idx} className="text-gray-700 font-medium text-lg flex items-start gap-3">
+                                <li key={idx} className="text-gray-700 font-medium text-sm lg:text-lg flex items-start gap-3">
                                   <span className="w-2 h-2 bg-black rounded-full mt-3 flex-shrink-0"></span>
                                   {benefit}
                                 </li>
