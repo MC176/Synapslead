@@ -27,7 +27,7 @@ const Tests = () => {
     {
       number: "01",
       title: "Le Grand Test SynapsLead™",
-      description: "Forces, archétype, valeur, canal sensoriel",
+      description: "Forces, archétype, valeur, canal de communication",
       icon: "🧠",
       gradient: "from-rose-50 to-rose-200"
     },
@@ -40,23 +40,23 @@ const Tests = () => {
     },
     {
       number: "03",
-      title: "Estime de soi & confiance", 
-      description: "Évaluer et renforcer votre fondation intérieure",
-      icon: "💎",
+      title: "Test psycho-neuro-nutritionnel",
+      description: "Optimiser votre alimentation pour votre cerveau",
+      icon: "🥗",
       gradient: "from-rose-200 to-rose-400"
     },
     {
       number: "04",
-      title: "Croyances limitantes & transgénérationnelles",
-      description: "Situations récurrentes et transmissions inconscientes",
-      icon: "🔍",
+      title: "Estime de soi & confiance en soi", 
+      description: "Apprendre à faire la différence, évaluer et renforcer votre fondation intérieure",
+      icon: "💎",
       gradient: "from-rose-300 to-rose-500"
     },
     {
       number: "05",
-      title: "Test psycho-neuro-nutritionnel",
-      description: "Optimiser votre alimentation pour votre cerveau",
-      icon: "🥗",
+      title: "Croyances limitantes & transgénérationnelles",
+      description: "Situations récurrentes et transmissions inconscientes",
+      icon: "🔍",
       gradient: "from-rose-400 to-rose-600"
     },
     {

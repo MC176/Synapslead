@@ -2,7 +2,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { expCards } from "../constants";
+import { expCards, mentalBoostWorkshops } from "../constants";
 import GlowCard from "../components/GlowCard";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -147,6 +147,54 @@ const Experience = () => {
                               )
                             )}
                           </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Rectangle MentalBoost à droite */}
+                  <div className={`w-1/2 ${isLeft ? 'pl-8' : 'pr-8'} ${isLeft ? 'right-block' : 'left-block'}`}>
+                    <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-3xl p-8 shadow-xl border-2 border-blue-200 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                      <div className="expText flex flex-col gap-6">
+                        {/* En-tête MentalBoost */}
+                        <div className="mb-4">
+                          <h2 className="font-black text-2xl text-blue-900 mb-2">{mentalBoostWorkshops[index].title}</h2>
+                          <p className="text-lg text-blue-700 font-medium">{mentalBoostWorkshops[index].subtitle}</p>
+                        </div>
+                        
+                        {/* Description */}
+                        <div className="bg-white/80 rounded-2xl p-6 border-l-4 border-blue-400">
+                          <p className="text-blue-800 text-lg leading-relaxed">
+                            {mentalBoostWorkshops[index].description}
+                          </p>
+                        </div>
+                        
+                        {/* Avantages */}
+                        <div>
+                          <h3 className="font-bold text-xl text-blue-900 mb-4 flex items-center gap-2">
+                            <span className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center text-white text-sm">⚡</span>
+                            Avantages de l'atelier
+                          </h3>
+                          <ul className="space-y-3">
+                            {mentalBoostWorkshops[index].benefits.map(
+                              (benefit, idx) => (
+                                <li key={idx} className="text-blue-800 font-medium text-lg flex items-start gap-3">
+                                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
+                                  {benefit}
+                                </li>
+                              )
+                            )}
+                          </ul>
+                        </div>
+                        
+                        {/* Informations pratiques */}
+                        <div className="flex gap-4 mt-4">
+                          <div className="bg-blue-100 rounded-xl p-4 flex-1">
+                            <p className="text-blue-900 font-semibold text-sm">📅 {mentalBoostWorkshops[index].schedule}</p>
+                          </div>
+                          <div className="bg-blue-100 rounded-xl p-4 flex-1">
+                            <p className="text-blue-900 font-semibold text-sm">💻 {mentalBoostWorkshops[index].format}</p>
+                          </div>
                         </div>
                       </div>
                     </div>

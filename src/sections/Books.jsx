@@ -25,7 +25,7 @@ const Books = () => {
       description: "Découvrez les fondements scientifiques de la transformation du leadership féminin. Un guide complet pour comprendre et appliquer les neurosciences au service de votre réussite.",
       cover: "/images/tome1.png",
       amazonLink: "https://amazon.com",
-      price: "24.90€",
+      price: "20.00€",
       badge: "Bestseller",
       rating: 4.9,
       reviews: 127,
@@ -39,7 +39,7 @@ const Books = () => {
       description: "Les clés neurologiques pour optimiser votre potentiel de leadership. Apprenez à utiliser votre cerveau comme votre meilleur allié dans votre carrière.",
       cover: "/images/tome2.png",
       amazonLink: "https://amazon.com",
-      price: "29.90€",
+      price: "20.00€",
       badge: "Nouveau",
       rating: 4.8,
       reviews: 89,
@@ -53,7 +53,7 @@ const Books = () => {
       description: "Reconstruire une estime solide et développer votre autorité naturelle. Transformez vos doutes en force et votre vulnérabilité en puissance.",
       cover: "/images/tome3.jpg",
       amazonLink: "https://amazon.com",
-      price: "26.90€",
+      price: "20.00€",
       badge: "Populaire",
       rating: 4.9,
       reviews: 156,
@@ -121,7 +121,7 @@ const Books = () => {
                       </svg>
                     </a>
                     <div className="text-center sm:text-left">
-                      <div className="text-3xl font-bold">24.90€</div>
+                      <div className="text-3xl font-bold">20.00€</div>
                       <div className="text-sm opacity-80">Broché + E-book inclus</div>
                     </div>
                   </div>

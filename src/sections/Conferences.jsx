@@ -120,7 +120,7 @@ const Conferences = () => {
               <div>
                 <h3 className="text-4xl font-bold mb-6">Monaco Image Consulting</h3>
                 <p className="text-xl mb-8 opacity-90 leading-relaxed">
-                  Mon cabinet de coaching spécialisé dans l'accompagnement personnalisé des femmes dirigeantes. 
+                  Mon cabinet d'accompagnement spécialisé dans l'accompagnement personnalisé des femmes dirigeantes. 
                   C'est ici que j'applique concrètement la méthode SynapsLead au quotidien.
                 </p>
                 
@@ -131,7 +131,7 @@ const Conferences = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span>Coaching individuel personnalisé</span>
+                    <span>Accompagnement individuel personnalisé</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">

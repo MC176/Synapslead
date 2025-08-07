@@ -242,7 +242,7 @@ const Hero = () => {
               {/* Ligne de séparation horizontale */}
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <div className="text-center">
-                  <p className="text-gray-500 text-sm font-medium">
+                  <p className="text-gray-500 text-medium font-medium">
                     Le Leadership ne se décrète pas, il se construit.
                   </p>
                 </div>

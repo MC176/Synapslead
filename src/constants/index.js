@@ -132,7 +132,7 @@ const expCards = [
     subtitle: "Stabiliser l'énergie, réorganiser le mental, retrouver sa clarté intérieure.",
     date: "Modules 1-4",
     responsibilities: [
-      "Poser les fondations intérieures : Forces de caractère, croyances, zones de résistance.",
+      "Poser les fondations intérieures : Comprendre votre archétype de leadership, vos canaux de communication et votre sensibilité intérieure .",
       "Cartographier ses émotions : Identifier les émotions dominantes et mieux les réguler.",
       "Nourrir le cerveau, apaiser le corps : Neuronutrition, stress, sommeil, hormones.",
       "Réactiver les bons circuits : Reprogrammer les automatismes internes.",
@@ -183,6 +183,50 @@ const expLogos = [
   },
 ];
 
+const mentalBoostWorkshops = [
+  {
+    title: "🧠 MentalBoost - Fondations",
+    subtitle: "Atelier d'ancrage et de stabilisation",
+    description: "Session intensive pour poser les bases de votre transformation. Travail sur l'ancrage, la clarté mentale et la stabilisation énergétique.",
+    benefits: [
+      "Techniques d'ancrage et de centrage",
+      "Exercices de respiration et méditation",
+      "Outils de gestion du stress et des émotions",
+      "Pratiques de neuronutrition appliquée"
+    ],
+    schedule: "Sessions mensuelles de 2h",
+    format: "En ligne et en présentiel",
+    phase: "Partie 1"
+  },
+  {
+    title: "⚡ MentalBoost - Transformation",
+    subtitle: "Atelier de déblocage et d'évolution",
+    description: "Workshop intensif pour déjouer les juges intérieurs, transformer les croyances limitantes et créer une identité cohérente.",
+    benefits: [
+      "Techniques de déprogrammation mentale",
+      "Exercices d'estime de soi renforcée",
+      "Méthodes de communication authentique",
+      "Pratiques d'alignement intérieur-extérieur"
+    ],
+    schedule: "Sessions mensuelles de 2h",
+    format: "En ligne et en présentiel",
+    phase: "Partie 2"
+  },
+  {
+    title: "🌟 MentalBoost - Révélation",
+    subtitle: "Atelier d'incarnation du leadership",
+    description: "Session de transformation finale pour incarner votre leadership rayonnant et révéler votre marque personnelle unique.",
+    benefits: [
+      "Techniques de posture et présence",
+      "Exercices de rayonnement personnel",
+      "Méthodes de définition de marque",
+      "Pratiques d'incarnation du leadership"
+    ],
+    schedule: "Sessions mensuelles de 2h",
+    format: "En ligne et en présentiel",
+    phase: "Partie 3"
+  }
+];
 
 
 const socialImgs = [
@@ -206,4 +250,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  mentalBoostWorkshops,
 };
