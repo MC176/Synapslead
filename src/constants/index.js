@@ -185,17 +185,16 @@ const expLogos = [
 
 const mentalBoostWorkshops = [
   {
-    title: "🧠 MentalBoost - Fondations",
+    title: "MentalBoost - Fondations",
     subtitle: "Atelier d'ancrage et de stabilisation",
     description: "Session intensive pour poser les bases de votre transformation. Travail sur l'ancrage, la clarté mentale et la stabilisation énergétique.",
     benefits: [
       "Techniques d'ancrage et de centrage",
       "Exercices de respiration et méditation",
       "Outils de gestion du stress et des émotions",
-      "Pratiques de neuronutrition appliquée"
     ],
-    schedule: "Sessions mensuelles de 2h",
-    format: "En ligne et en présentiel",
+    schedule: "A disposition selon votre formule",
+    format: "Par visioconférence",
     phase: "Partie 1"
   },
   {

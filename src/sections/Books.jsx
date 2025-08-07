@@ -36,7 +36,7 @@ const Books = () => {
     {
       title: "Neurosciences & Leadership",
       subtitle: "Comprendre votre cerveau pour mieux diriger",
-      description: "Les clés neurologiques pour optimiser votre potentiel de leadership. Apprenez à utiliser votre cerveau comme votre meilleur allié dans votre carrière.",
+      description: "Ce tome vous invite à plonger dans votre histoire, déconstruire les conditionnements, et reconnecter les fils de votre vérité intérieure. Un travail en profondeur sur les émotions, les schémas récurrents et les transmissions invisibles. Pour enfin renaître de vous-même, libre, lucide… et prête à faire émerger l'héroïne oubliée.",
       cover: "/images/tome2.png",
       amazonLink: "https://amazon.com",
       price: "20.00€",
@@ -50,7 +50,7 @@ const Books = () => {
     {
       title: "Estime de Soi & Autorité",
       subtitle: "Les piliers du leadership authentique",
-      description: "Reconstruire une estime solide et développer votre autorité naturelle. Transformez vos doutes en force et votre vulnérabilité en puissance.",
+      description: "Ce tome propose un voyage d'exploration de votre communication, apparence et présence. Il affine expression verbale et non-verbale, clarifie l’intuition, et révèle votre image à travers style, couleurs et morphologie. L’objectif : créer un branding personnel puissant, aligné avec la femme que vous êtes devenue.",
       cover: "/images/tome3.jpg",
       amazonLink: "https://amazon.com",
       price: "20.00€",
@@ -91,22 +91,11 @@ const Books = () => {
                   <h2 className="text-4xl lg:text-5xl font-bold mb-4">Leadership Féminin</h2>
                   <h3 className="text-xl lg:text-2xl font-medium mb-6 opacity-90">La méthode SynapsLead</h3>
                   <p className="text-lg mb-8 opacity-90 leading-relaxed">
-                    Le livre qui a transformé la vie de plus de 500 femmes dirigeantes. 
-                    Découvrez les secrets des neurosciences appliquées au leadership féminin.
+                    Le SOCLE, c'est la base qu'on n'enseigne jamais aux femmes leaders.
+                    Apprendre à nourrir son cerveau, à écouter son stress, à réhabiter son corps avant de vouloir convaincre le monde.
+                    Une fondation intérieure essentielle pour rayonner sans s'épuiser.
                   </p>
-                  
-                  <div className="flex items-center gap-6 mb-8">
-                    <div className="flex items-center gap-1">
-                      {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                      <span className="ml-2 font-semibold">4.9/5</span>
-                    </div>
-                    <span className="text-white/80">• 127 avis</span>
-                    <span className="text-white/80">• 280 pages</span>
-                  </div>
+                
 
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a
@@ -178,18 +167,7 @@ const Books = () => {
                         {book.description}
                       </p>
 
-                      <div className="flex items-center gap-4 text-sm text-gray-500">
-                        <div className="flex items-center gap-1">
-                          {[...Array(5)].map((_, i) => (
-                            <svg key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                          ))}
-                          <span className="ml-1 font-semibold">{book.rating}</span>
-                        </div>
-                        <span>• {book.reviews} avis</span>
-                        <span>• {book.pages} pages</span>
-                      </div>
+
 
                       <div className="flex items-center justify-between pt-4">
                         <div>
