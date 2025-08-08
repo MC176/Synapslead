@@ -7,7 +7,12 @@ import TitleHeader from "../components/TitleHeader";
 const Contact = () => {
   // Initialiser EmailJS
   useEffect(() => {
-    emailjs.init('2rvX7TiM_sBqKr5r9');
+    try {
+      emailjs.init('2rvX7TiM_sBqKr5r9');
+      console.log("EmailJS initialized successfully");
+    } catch (error) {
+      console.error("EmailJS initialization error:", error);
+    }
   }, []);
 
   const formRef = useRef(null);
@@ -52,13 +57,19 @@ const Contact = () => {
     setErrorSubmit(null);
 
     try {
-      await emailjs.sendForm(
+      // Vérifier que EmailJS est initialisé
+      if (!emailjs) {
+        throw new Error("EmailJS n'est pas initialisé");
+      }
+
+      const result = await emailjs.sendForm(
         'service_30ev33j',
         'template_32xjsax',
         formRef.current,
         '2rvX7TiM_sBqKr5r9'
       );
 
+      console.log("EmailJS Success:", result);
       setIsSubmitted(true);
       setForm({
         firstName: "",
@@ -68,8 +79,17 @@ const Contact = () => {
         message: "",
       });
     } catch (error) {
-      setErrorSubmit('Erreur lors de l\'envoi. Veuillez réessayer.');
-      console.error("EmailJS Error:", error);
+      console.error("EmailJS Error Details:", error);
+      let errorMessage = 'Erreur lors de l\'envoi. Veuillez réessayer.';
+      
+      // Messages d'erreur plus spécifiques
+      if (error.text) {
+        errorMessage = `Erreur EmailJS: ${error.text}`;
+      } else if (error.message) {
+        errorMessage = `Erreur: ${error.message}`;
+      }
+      
+      setErrorSubmit(errorMessage);
     } finally {
       setLoading(false);
     }
@@ -190,7 +210,21 @@ const Contact = () => {
                 {/* Champs cachés pour EmailJS */}
                 <input type="hidden" name="from_name" value={`${form.firstName} ${form.lastName}`} />
                 <input type="hidden" name="reply_to" value={form.email} />
-                <input type="hidden" name="message" value={form.message} />
+                <input type="hidden" name="message" value={`NOUVEAU MESSAGE DE CONTACT
+
+Nom complet: ${form.firstName} ${form.lastName}
+Email: ${form.email}
+Téléphone: ${form.phone}
+
+Message:
+${form.message}
+
+---
+Message envoyé depuis le formulaire de contact du site SynapsLead`} />
+                <input type="hidden" name="phone" value={form.phone} />
+                <input type="hidden" name="firstName" value={form.firstName} />
+                <input type="hidden" name="lastName" value={form.lastName} />
+                <input type="hidden" name="email" value={form.email} />
                 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>

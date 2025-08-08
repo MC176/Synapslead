@@ -160,13 +160,13 @@ const Hero = () => {
               </div>
               <div className="w-px h-12 bg-gradient-to-b from-transparent via-white/30 to-transparent"></div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white">+5 ans</div>
-                <div className="text-sm text-white/80">De Réflexion</div>
+                <div className="text-2xl md:text-3xl font-bold text-white">15 ans</div>
+                <div className="text-sm text-white/80">D'analyse & d'expérimentation</div>
               </div>
               <div className="w-px h-12 bg-gradient-to-b from-transparent via-white/30 to-transparent"></div>
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-white">27</div>
-                <div className="text-sm text-white/80">Années d'Expérience</div>
+                <div className="text-sm text-white/80">Années Entrepreneuriales</div>
               </div>
             </div>
           </div>
