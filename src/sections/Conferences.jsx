@@ -153,7 +153,7 @@ const Conferences = () => {
                 </div>
 
                 <a
-                  href="https://monacoimageconsulting.com"
+                  href="https://monaco-imageconsulting.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 bg-white text-[#d9b8b0] px-8 py-4 rounded-2xl font-bold hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
