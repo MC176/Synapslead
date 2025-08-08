@@ -22,15 +22,23 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToTop = (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
-        <div className="logo group">
+        <a href="#hero" onClick={scrollToTop} className="logo group">
           <span className="bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] bg-clip-text text-transparent font-bold">
             SynapsLead
           </span>
           <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#d9b8b0] to-[#e7d3cb] transition-all duration-300 group-hover:w-full"></div>
-        </div>
+        </a>
 
         <nav className="desktop">
           <ul className="flex items-center gap-8">
